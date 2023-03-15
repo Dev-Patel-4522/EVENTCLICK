@@ -1,12 +1,20 @@
 // import logo from './logo.svg';
 import './App.css';
-import TailwindSearchBar from "./searchbar";
+import Signin from "./Signin";
+import Registration from './Registration';
+// import RegistrationForm from './RegistrationForm';
+// import { LoginScreen } from "./LoginScreen";
+// import { SignupScreen } from "./SignupScreen";
+// import { HomeScreen } from "./HomeScreen";
+// import { ForgotPasswordScreen } from "./ForgotPasswordScreen";
 
 function App() {
   return (
     <div className="App">
-      <TailwindSearchBar />
-
+      <Signin />
+      <Registration />
+      {/* <RegistrationForm /> */}
+      {/* export {(LoginScreen, SignupScreen, HomeScreen, ForgotPasswordScreen)}; */}
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
