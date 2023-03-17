@@ -1,27 +1,33 @@
 import React, {useState} from 'react';
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
-import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import {
+  getAuth,
+  signInWithEmailAndPassword,
+  GoogleAuthProvider,
+  signInWithPopup,
+} from "firebase/auth";
+// import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { app } from "./FIREBASE";
 
 const auth = getAuth(app);
 const googleProvider = new GoogleAuthProvider();
 
+  
+
 function Signin(){
-
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const signinuser = () => {
-    signInWithEmailAndPassword(auth, email, password)
-      .then((value) => alert("Sign In Success"))
-      .catch((err) => console.log(err));
-  };
-  const signinWithGoogle = () => {
-    signInWithPopup(auth, googleProvider).then((value) =>
-      alert("Sign In Success")
-    );
-  };
-
-  return (
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const signinuser = () => {
+      signInWithEmailAndPassword(auth, email, password)
+        .then((value) => alert("Sign In Success"))
+        .catch((err) => console.log(err));
+    };
+    const signinWithGoogle = () => {
+      signInWithPopup(auth, googleProvider).then((value) =>
+        alert("Sign In Success")
+      );
+    };
+  
+  return(
     <div>
       <section class="h-screen">
         <div class="h-full">
@@ -115,7 +121,7 @@ function Signin(){
                   <input
                     onChange={(e) => setPassword(e.target.value)}
                     type="password"
-                    class="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                    class="border-dotted border-2 border-sky-500 peer block min-h-[auto] w-full rounded bg-transparent py-[0.32rem] px-3 leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                     id="exampleFormControlInput22"
                     placeholder="Password"
                   />
@@ -139,7 +145,7 @@ function Signin(){
                       class="inline-block pl-[0.15rem] hover:cursor-pointer"
                       for="exampleCheck2"
                     >
-                      Remember me
+                      Remember Me
                     </label>
                   </div>
                   <a href="#!">Forgot password?</a>
@@ -167,7 +173,7 @@ function Signin(){
                   <p class="mt-2 mb-0 pt-1 text-sm font-semibold">
                     Don't have an account?
                     <a
-                      href="#!"
+                      href="./Registration"
                       class="text-danger transition duration-150 ease-in-out hover:text-danger-600 focus:text-danger-600 active:text-danger-700"
                     >
                       Register
@@ -181,6 +187,6 @@ function Signin(){
       </section>
     </div>
   );
-}
+  }
 
 export default Signin;

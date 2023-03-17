@@ -1,8 +1,10 @@
 // import logo from './logo.svg';
 import './App.css';
-import Signin from "./Signin";
-import Registration from './Registration';
-// import RegistrationForm from './RegistrationForm';
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import Signin from "./Signin";
+// import Registration from './Registration';
+// import EXAMPLE from './EXAMPLE';
+import RegistrationForm from './RegistrationForm';
 // import { LoginScreen } from "./LoginScreen";
 // import { SignupScreen } from "./SignupScreen";
 // import { HomeScreen } from "./HomeScreen";
@@ -11,9 +13,10 @@ import Registration from './Registration';
 function App() {
   return (
     <div className="App">
-      <Signin />
-      <Registration />
-      {/* <RegistrationForm /> */}
+      {/* <Signin /> */}
+      {/* <Registration /> */}
+      {/* <EXAMPLE /> */}
+      <RegistrationForm />
       {/* export {(LoginScreen, SignupScreen, HomeScreen, ForgotPasswordScreen)}; */}
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
