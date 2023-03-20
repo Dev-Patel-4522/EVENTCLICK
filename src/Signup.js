@@ -5,6 +5,7 @@ import {
   GoogleAuthProvider,
   signInWithPopup,
 } from "firebase/auth";
+import GoogleIcon from "@mui/icons-material/Google";
 import { app } from "./FIREBASE";
 import { database } from "./FIREBASE";
 import { ref, push, child, update } from "firebase/database";
@@ -12,7 +13,7 @@ import { ref, push, child, update } from "firebase/database";
     const auth = getAuth(app);
     const googleProvider = new GoogleAuthProvider();
 
-function Registration() {
+function Signup() {
     // const [name, setName] = useState("");
     // const [email, setEmail] = useState("");
     // const [password, setPassword] = useState("");
@@ -161,16 +162,16 @@ function Registration() {
             <button
               onClick={handleSubmit}
               type="submit"
-              class="w-full text-center py-3 rounded background-green hover:background-green-dark focus:outline-none my-1"
+              class="bg-blue-600 w-full justify-center text-center py-3 rounded dark:md:hover:bg-orange-500 focus:outline-none my-1"
             >
               Create Account
             </button>
             <button
               onClick={signupWithGoogle}
               type="submit"
-              class="w-full text-center py-3 rounded background-green hover:background-green-dark focus:outline-none my-1"
+              class="bg-blue-600 w-full justify-center text-center py-3 rounded dark:md:hover:bg-orange-500 focus:outline-none my-1"
             >
-              Create With Google
+              <GoogleIcon /> Create With Google
             </button>
 
             <div class="text-center text-sm text-grey-dark mt-4">
@@ -207,4 +208,4 @@ function Registration() {
   );
 }
 
-export default Registration
+export default Signup;
