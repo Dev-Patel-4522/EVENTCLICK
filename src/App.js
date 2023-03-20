@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
-// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Footernav from './Footernav';
 import Signin from "./Signin";
 import Signup from './Signup';
 // import EXAMPLE from './EXAMPLE';
@@ -13,8 +14,19 @@ import Signup from './Signup';
 function App() {
   return (
     <div className="App">
-      <Signin />
-      <Signup />
+      <Router>
+        <Routes>
+          {/* <Navbar /> */}
+          {/* <Route path="/" element={<Home />} /> */}
+          {/* <Route path="/aboutus" element={<Aboutus />} /> */}
+          {/* <Route path="/service" element={<Services />} /> */}
+          <Route path="/Signin" element={<Signin />} />
+          <Route path="/Signup" element={<Signup />} />
+          <Footernav />
+        </Routes>
+      </Router>
+
+      {/* <Signup /> */}
       {/* <EXAMPLE /> */}
       {/* <RegistrationForm /> */}
       {/* export {(LoginScreen, SignupScreen, HomeScreen, ForgotPasswordScreen)}; */}
