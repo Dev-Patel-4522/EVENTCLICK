@@ -5,6 +5,7 @@ import {
   GoogleAuthProvider,
   signInWithPopup,
 } from "firebase/auth";
+import GoogleIcon from "@mui/icons-material/Google";
 // import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { app } from "./FIREBASE";
 
@@ -100,14 +101,18 @@ function Signin(){
                       Remember Me
                     </label>
                   </div>
-                  <a href="#!">Forgot password?</a>
+                </div>
+                <div class="mb-6 flex items-center justify-between">
+                  <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
+                    <a href="#!"> Forgot password?</a>
+                  </div>
                 </div>
 
-                <div class="text-center lg:text-left">
+                <div class="content-center text-center lg:text-left">
                   <button
                     onClick={signinuser}
                     type="button"
-                    class="bg-blue-600 w-full justify-center text-center py-3 rounded dark:md:hover:bg-orange-500 focus:outline-none my-1"
+                    class="bg-blue-600 w-80 text-center py-3 rounded dark:md:hover:bg-orange-500 focus:outline-none my-1"
                     data-te-ripple-init
                     data-te-ripple-color="light"
                   >
@@ -117,17 +122,17 @@ function Signin(){
                   <button
                     onClick={signinWithGoogle}
                     type="button"
-                    class="bg-blue-600 w-full justify-center text-center py-3 rounded dark:md:hover:bg-orange-500 focus:outline-none my-1"
+                    class="bg-blue-600 w-80 text-center py-3 rounded dark:md:hover:bg-orange-500 focus:outline-none my-1"
                     data-te-ripple-init
                     data-te-ripple-color="light"
                   >
-                    Log-In With Google
+                    <GoogleIcon /> Log-In With Google
                   </button>
                   <p class="mt-2 mb-0 pt-1 text-sm font-semibold">
-                    Don't have an account?
+                    Don't have an account ?
                     <a
-                      href="./Registration"
-                      class="text-danger transition duration-150 ease-in-out hover:text-danger-600 focus:text-danger-600 active:text-danger-700"
+                      href="./Signup"
+                      class="ml-1 text-danger transition duration-150 ease-in-out hover:text-danger-600 focus:text-danger-600 active:text-danger-700"
                     >
                       Register
                     </a>

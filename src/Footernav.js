@@ -1,7 +1,7 @@
 import React from "react";
-import { Icon } from "@mui/material";
+// import { Icon } from "@mui/material";
 import PinterestIcon from "@mui/icons-material/Pinterest";
-function Footernav() {
+function Footer() {
   return (
     <div className="footer-container">
       <footer class="bg-[#54A3FF]/20 text-gray-600 body-font">
@@ -196,4 +196,4 @@ function Footernav() {
   );
 }
 
-export default Footernav;
+export default Footer;

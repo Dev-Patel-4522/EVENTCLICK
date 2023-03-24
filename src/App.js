@@ -1,9 +1,10 @@
 // import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Footernav from './Footernav';
-import Signin from "./Signin";
-import Signup from './Signup';
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import Footer from './Footernav';
+// import Signin from "./Signin";
+// import Signup from './Signup';
+import BootstrapDialogTitle from "./CustomerAccountSetting";
 // import EXAMPLE from './EXAMPLE';
 // import RegistrationForm from './RegistrationForm';
 // import { LoginScreen } from "./LoginScreen";
@@ -14,19 +15,22 @@ import Signup from './Signup';
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Routes>
+      {/* <Router> */}
+        {/* <Routes> */}
           {/* <Navbar /> */}
           {/* <Route path="/" element={<Home />} /> */}
           {/* <Route path="/aboutus" element={<Aboutus />} /> */}
           {/* <Route path="/service" element={<Services />} /> */}
-          <Route path="/Signin" element={<Signin />} />
-          <Route path="/Signup" element={<Signup />} />
-          <Footernav />
-        </Routes>
-      </Router>
+          {/* <Route path="/Signin" element={<Signin />} /> */}
+          {/* <Route path="/Signup" element={<Signup />} /> */}
+          {/* <Footer /> */}
+        {/* </Routes> */}
+      {/* </Router> */}
 
       {/* <Signup /> */}
+      {/* <Signin /> */}
+      <BootstrapDialogTitle />
+
       {/* <EXAMPLE /> */}
       {/* <RegistrationForm /> */}
       {/* export {(LoginScreen, SignupScreen, HomeScreen, ForgotPasswordScreen)}; */}
