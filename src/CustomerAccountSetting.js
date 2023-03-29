@@ -128,16 +128,16 @@ function CustomerAccountSetting() {
           <div className="flex flex-col text-center w-full mb-5">
             <Stack direction="row" className="text-center place-content-center">
               <label class="file">
-                <input hidden
-                  type="file"
-                  class="flex mx-auto mb-8 mr-8 text-white bg-[#4484CE] border-0 py-2 px-8 focus:outline-none"
-                  // alt="Raj Shah/Image"
+                <input 
+                type="file"
+                  class=" flex mx-auto mb-8 mr-8 text-white bg-[#4484CE] border-0 py-2 px-8 focus:outline-none"
+                  alt="Raj Shah/Image"
                   // src={imageAsUrl.imgUrl}
                   // alt={image}
                   onChange={handleChange}
                   // src={setImage}
 
-                  // sx={{ width: 60, height: 60 }}
+                  sx={{ width: 60, height: 60 }}
                   id="file"
                   aria-label="File browser example"
                 />
@@ -240,7 +240,7 @@ function CustomerAccountSetting() {
                       id="name"
                       name="name"
                       autoComplete="off"
-                      defaultValue="Raj Shah"
+                      // defaultValue="Raj Shah"
                       className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     />
                   </div>
@@ -258,7 +258,7 @@ function CustomerAccountSetting() {
                       id="username"
                       name="username"
                       autoComplete="off"
-                      defaultValue="raj_s_20"
+                      // defaultValue="raj_s_20"
                       className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     />
                   </div>
@@ -282,7 +282,7 @@ function CustomerAccountSetting() {
                       id="email"
                       name="email"
                       autoComplete="off"
-                      defaultValue="rajshah20@gmail.com"
+                      // defaultValue="rajshah20@gmail.com"
                       className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     />
                   </div>
@@ -300,7 +300,7 @@ function CustomerAccountSetting() {
                       id="password"
                       name="password"
                       autoComplete="off"
-                      defaultValue="Raj@205"
+                      // defaultValue="Raj@205"
                       pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" //A form with a password field that must contain 8 or more characters that are of at least one number, and one uppercase and lowercase letter:
                       className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     />

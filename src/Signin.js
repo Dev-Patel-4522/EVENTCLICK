@@ -1,26 +1,19 @@
 import React, {useState} from 'react';
-import {
-  getAuth,
-  signInWithEmailAndPassword,
-  GoogleAuthProvider,
-  signInWithPopup,
-} from "firebase/auth";
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import GoogleIcon from "@mui/icons-material/Google";
-// import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { app } from "./FIREBASE";
 
 const auth = getAuth(app);
 const googleProvider = new GoogleAuthProvider();
 
-  
-
 function Signin(){
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const signinuser = () => {
-      signInWithEmailAndPassword(auth, email, password)
+      signInWithEmailAndPassword(auth,email,password)
         .then((value) => alert("Sign In Success"))
-        .catch((err) => console.log(err));
+        .catch((err) => alert(err));
     };
     const signinWithGoogle = () => {
       signInWithPopup(auth, googleProvider).then((value) =>
@@ -56,34 +49,39 @@ function Signin(){
                 <div class="relative mb-6" data-te-input-wrapper-init>
                   <input
                     onChange={(e) => setEmail(e.target.value)}
+                    value={email}
                     type="text"
-                    class="border-dotted border-2 border-sky-500 peer block min-h-[auto] w-full rounded bg-transparent py-[0.32rem] px-3 leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                    required
+                    class="border-dotted border-2 border-sky-500 peer block min-h-[auto] w-full rounded bg-transparent py-[0.32rem] px-3 leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-black dark:placeholder:text-neutral-600 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-100"
+                    placeholder="Email Address"
                     id="exampleFormControlInput2"
-                    placeholder="Email address"
                   />
-                  <label
+                  {/* <label
                     for="exampleFormControlInput2"
-                    class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[1.15rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[1.15rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-neutral-200"
+                    class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-black transition-all duration-200 ease-out peer-focus:-translate-y-[1.15rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[1.15rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-400 dark:peer-focus:text-neutral-400"
                   >
                     Email address
-                  </label>
+                  </label> */}
                 </div>
 
                 {/* <!-- Password input --> */}
                 <div class="relative mb-6" data-te-input-wrapper-init>
                   <input
                     onChange={(e) => setPassword(e.target.value)}
+                    value={password}
                     type="password"
-                    class="border-dotted border-2 border-sky-500 peer block min-h-[auto] w-full rounded bg-transparent py-[0.32rem] px-3 leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                    required
+                    class="border-dotted border-2 border-sky-500 peer block min-h-[auto] w-full rounded bg-transparent py-[0.32rem] px-3 leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-black dark:placeholder:text-neutral-600 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-100"
                     id="exampleFormControlInput22"
                     placeholder="Password"
                   />
-                  <label
+                  {/* <label
                     for="exampleFormControlInput22"
-                    class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[1.15rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[1.15rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-neutral-200"
+                    class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-black transition-all duration-200 ease-out peer-focus:-translate-y-[1.15rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[1.15rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-400 dark:peer-focus:text-neutral-400"
                   >
                     Password
                   </label>
+                  <br /> */}
                 </div>
 
                 <div class="mb-6 flex items-center justify-between">
@@ -112,7 +110,7 @@ function Signin(){
                   <button
                     onClick={signinuser}
                     type="button"
-                    class="bg-blue-600 w-80 text-center py-3 rounded dark:md:hover:bg-orange-500 focus:outline-none my-1"
+                    class="bg-blue-600 w-80 text-center py-3 rounded dark:md:hover:bg-orange-500 dark:text-black focus:outline-none my-1"
                     data-te-ripple-init
                     data-te-ripple-color="light"
                   >
@@ -122,19 +120,19 @@ function Signin(){
                   <button
                     onClick={signinWithGoogle}
                     type="button"
-                    class="bg-blue-600 w-80 text-center py-3 rounded dark:md:hover:bg-orange-500 focus:outline-none my-1"
+                    class="bg-blue-600 w-80 text-center py-3 rounded dark:md:hover:bg-orange-500 dark:text-black focus:outline-none my-1"
                     data-te-ripple-init
                     data-te-ripple-color="light"
                   >
                     <GoogleIcon /> Log-In With Google
                   </button>
-                  <p class="mt-2 mb-0 pt-1 text-sm font-semibold">
-                    Don't have an account ?
+                  <p class="mt-2 mb-5 pt-1 text-sm font-semibold">
+                    Don't have an account?
                     <a
                       href="./Signup"
                       class="ml-1 text-danger transition duration-150 ease-in-out hover:text-danger-600 focus:text-danger-600 active:text-danger-700"
                     >
-                      Register
+                      Register Here
                     </a>
                   </p>
                 </div>
@@ -145,6 +143,6 @@ function Signin(){
       </section>
     </div>
   );
-  }
+}
 
 export default Signin;

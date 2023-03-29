@@ -1,10 +1,12 @@
 // import logo from './logo.svg';
-import './App.css';
+// import './App.css';
 // import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 // import Footer from './Footernav';
 // import Signin from "./Signin";
 // import Signup from './Signup';
-import BootstrapDialogTitle from "./CustomerAccountSetting";
+// import BootstrapDialogTitle from "./CustomerAccountSetting";
+import ForgetPassword from "./ForgetPassword";
 // import EXAMPLE from './EXAMPLE';
 // import RegistrationForm from './RegistrationForm';
 // import { LoginScreen } from "./LoginScreen";
@@ -29,7 +31,8 @@ function App() {
 
       {/* <Signup /> */}
       {/* <Signin /> */}
-      <BootstrapDialogTitle />
+      {/* <BootstrapDialogTitle /> */}
+      <ForgetPassword />
 
       {/* <EXAMPLE /> */}
       {/* <RegistrationForm /> */}
