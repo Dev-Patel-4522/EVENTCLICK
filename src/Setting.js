@@ -60,7 +60,7 @@ BootstrapDialogTitle.propTypes = {
   onClose: PropTypes.func.isRequired,
 };
 
-function CustomerAccountSetting() {
+function Setting() {
   // Dialog Box Set
   const [open, setOpen] = useState(false);
 
@@ -325,4 +325,4 @@ function CustomerAccountSetting() {
   );
 }
 
-export default CustomerAccountSetting;
+export default Setting;

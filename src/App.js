@@ -1,12 +1,21 @@
 // import logo from './logo.svg';
 // import './App.css';
-// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-// import Footer from './Footernav';
-// import Signin from "./Signin";
-// import Signup from './Signup';
-// import BootstrapDialogTitle from "./CustomerAccountSetting";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Home from "./Home";
+import Setting from "./Setting";
+import Navigationmenu from "./Navigationmenu";
+import Booking from "./Booking";
+import Contactus from "./Contactus";
+import Portfolio from "./Portfolio";
+import PhotographerOverview from "./PhotographerOverview";
+import Signin from "./Signin";
+import Signup from './Signup';
 import ForgetPassword from "./ForgetPassword";
+import Footernav from './Footernav';
+
+
 // import EXAMPLE from './EXAMPLE';
 // import RegistrationForm from './RegistrationForm';
 // import { LoginScreen } from "./LoginScreen";
@@ -17,22 +26,38 @@ import ForgetPassword from "./ForgetPassword";
 function App() {
   return (
     <div className="App">
-      {/* <Router> */}
-        {/* <Routes> */}
-          {/* <Navbar /> */}
-          {/* <Route path="/" element={<Home />} /> */}
-          {/* <Route path="/aboutus" element={<Aboutus />} /> */}
-          {/* <Route path="/service" element={<Services />} /> */}
-          {/* <Route path="/Signin" element={<Signin />} /> */}
-          {/* <Route path="/Signup" element={<Signup />} /> */}
-          {/* <Footer /> */}
-        {/* </Routes> */}
-      {/* </Router> */}
+      <Router>
+        <Navigationmenu />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Booking" element={<Booking />} />
+          <Route
+            path="/PhotographerOverview"
+            element={<PhotographerOverview />}
+          />
+          <Route path="/Portfolio" element={<Portfolio />} />
+          <Route path="/Setting" element={<Setting />} />
+          <Route path="/Contactus" element={<Contactus />} />
+          <Route path="/Signin" element={<Signin />} />
+          <Route path="/Signup" element={<Signup />} />
+          <Route path="/ForgetPassword" element={<ForgetPassword />} />
+          {/* <Route path="/Setting" 
+          element={<Setting />} 
+          />  */}
+          {/* <Route path="/Upcoming" 
+          element={<Upcoming />} 
+          /> */}
+          <Route path="*" element={<h1> PAGE NOT FOUND</h1>} />
+        </Routes>
+        <Footernav />
+      </Router>
 
       {/* <Signup /> */}
       {/* <Signin /> */}
       {/* <BootstrapDialogTitle /> */}
-      <ForgetPassword />
+      {/* <ForgetPassword /> */}
+      {/* <Contactus /> */}
+      {/* <Navigationmenu /> */}
 
       {/* <EXAMPLE /> */}
       {/* <RegistrationForm /> */}

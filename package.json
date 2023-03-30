@@ -18,7 +18,11 @@
     "react-icons": "^4.8.0",
     "react-router-dom": "^6.8.1",
     "react-scripts": "5.0.1",
+    "react-slider": "^2.0.4",
+    "react-youtube": "^10.1.0",
+    "swiper": "^9.1.1",
     "web-vitals": "^2.1.4",
+    "youtube": "^0.1.0",
     "yup": "^1.0.2"
   },
   "scripts": {

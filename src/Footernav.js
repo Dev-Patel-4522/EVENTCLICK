@@ -1,7 +1,7 @@
 import React from "react";
 // import { Icon } from "@mui/material";
 import PinterestIcon from "@mui/icons-material/Pinterest";
-function Footer() {
+function Footernav() {
   return (
     <div className="footer-container">
       <footer class="bg-[#54A3FF]/20 text-gray-600 body-font">
@@ -14,22 +14,34 @@ function Footer() {
               </h2>
               <nav class="list-none mb-10">
                 <li>
-                  <a href="/" class="text-gray-600 hover:text-blue-500 hover:cursor-pointer">
+                  <a
+                    href="/"
+                    class="text-gray-600 hover:text-blue-500 hover:cursor-pointer"
+                  >
                     Home
                   </a>
                 </li>
                 <li>
-                  <a href="/" class="text-gray-600 hover:text-blue-500 hover:cursor-pointer">
+                  <a
+                    href="/"
+                    class="text-gray-600 hover:text-blue-500 hover:cursor-pointer"
+                  >
                     Photographers
                   </a>
                 </li>
                 <li>
-                  <a href="/" class="text-gray-600 hover:text-blue-500 hover:cursor-pointer">
+                  <a
+                    href="/"
+                    class="text-gray-600 hover:text-blue-500 hover:cursor-pointer"
+                  >
                     About US
                   </a>
                 </li>
                 <li>
-                  <a href="/" class="text-gray-600 hover:text-blue-500 hover:cursor-pointer">
+                  <a
+                    href="/"
+                    class="text-gray-600 hover:text-blue-500 hover:cursor-pointer"
+                  >
                     Contact Us
                   </a>
                 </li>
@@ -42,22 +54,34 @@ function Footer() {
               </h2>
               <nav class="list-none mb-10">
                 <li>
-                  <a href="/" class="text-gray-600 hover:text-blue-500 hover:cursor-pointer">
+                  <a
+                    href="/"
+                    class="text-gray-600 hover:text-blue-500 hover:cursor-pointer"
+                  >
                     All
                   </a>
                 </li>
                 <li>
-                  <a href="/" class="text-gray-600 hover:text-blue-500 hover:cursor-pointer">
+                  <a
+                    href="/"
+                    class="text-gray-600 hover:text-blue-500 hover:cursor-pointer"
+                  >
                     Wedding
                   </a>
                 </li>
                 <li>
-                  <a href="/" class="text-gray-600 hover:text-blue-500 hover:cursor-pointer">
+                  <a
+                    href="/"
+                    class="text-gray-600 hover:text-blue-500 hover:cursor-pointer"
+                  >
                     Birthday
                   </a>
                 </li>
                 <li>
-                  <a href="/" class="text-gray-600 hover:text-blue-500 hover:cursor-pointer">
+                  <a
+                    href="/"
+                    class="text-gray-600 hover:text-blue-500 hover:cursor-pointer"
+                  >
                     Professional
                   </a>
                 </li>
@@ -70,12 +94,18 @@ function Footer() {
               </h2>
               <nav class="list-none mb-10">
                 <li>
-                  <a href="/" class="text-gray-600 hover:text-blue-500 hover:cursor-pointer">
+                  <a
+                    href="/"
+                    class="text-gray-600 hover:text-blue-500 hover:cursor-pointer"
+                  >
                     Terms Of Use
                   </a>
                 </li>
                 <li>
-                  <a href="/" class="text-gray-600 hover:text-blue-500 hover:cursor-pointer">
+                  <a
+                    href="/"
+                    class="text-gray-600 hover:text-blue-500 hover:cursor-pointer"
+                  >
                     Privacy Policy
                   </a>
                 </li>
@@ -88,12 +118,18 @@ function Footer() {
               </h2>
               <nav class="list-none mb-10">
                 <li>
-                  <a href="/" class="text-gray-600 hover:text-blue-500 hover:cursor-pointer">
+                  <a
+                    href="/"
+                    class="text-gray-600 hover:text-blue-500 hover:cursor-pointer"
+                  >
                     +91 85125 81845
                   </a>
                 </li>
                 <li>
-                  <a href="/" class="text-gray-600 hover:text-blue-500 hover:cursor-pointer">
+                  <a
+                    href="/"
+                    class="text-gray-600 hover:text-blue-500 hover:cursor-pointer"
+                  >
                     support@eventclick.com
                   </a>
                 </li>
@@ -106,9 +142,15 @@ function Footer() {
               </h2>
               <nav class="list-none mb-10">
                 <li>
-                  <a href="/" class="text-gray-600 hover:text-gray-800 hover:cursor-pointer">
+                  <a
+                    href="/"
+                    class="text-gray-600 hover:text-gray-800 hover:cursor-pointer"
+                  >
                     <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-                      <a href="/" class="ml-3 text-gray-600 hover:text-blue-500">
+                      <a
+                        href="/"
+                        class="ml-3 text-gray-600 hover:text-blue-500"
+                      >
                         <svg
                           fill="currentColor"
                           stroke-linecap="round"
@@ -121,7 +163,10 @@ function Footer() {
                         </svg>
                       </a>
                       {/* Insta logo */}
-                      <a href="/" class="ml-3 text-gray-600 hover:text-blue-500 hover:cursor-pointer">
+                      <a
+                        href="/"
+                        class="ml-3 text-gray-600 hover:text-blue-500 hover:cursor-pointer"
+                      >
                         <svg
                           fill="none"
                           stroke="currentColor"
@@ -143,7 +188,10 @@ function Footer() {
                         </svg>
                       </a>
                       {/* linkedin logo */}
-                      <a href="/"  class="ml-3 text-gray-600 hover:text-blue-500 hover:cursor-pointer">
+                      <a
+                        href="/"
+                        class="ml-3 text-gray-600 hover:text-blue-500 hover:cursor-pointer"
+                      >
                         <svg
                           fill="currentColor"
                           stroke="currentColor"
@@ -161,7 +209,10 @@ function Footer() {
                         </svg>
                       </a>
                       {/* Pinterest logo */}
-                      <a href="/" class="ml-2.5 text-gray-600 hover:text-blue-500 hover:cursor-pointer">
+                      <a
+                        href="/"
+                        class="ml-2.5 text-gray-600 hover:text-blue-500 hover:cursor-pointer"
+                      >
                         <svg
                           fill="currentColor"
                           stroke="currentColor"
@@ -196,4 +247,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default Footernav;

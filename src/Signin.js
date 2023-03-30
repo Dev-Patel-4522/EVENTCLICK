@@ -69,7 +69,7 @@ function Signin(){
                   <input
                     onChange={(e) => setPassword(e.target.value)}
                     value={password}
-                    type="password"
+                    type="text"
                     required
                     class="border-dotted border-2 border-sky-500 peer block min-h-[auto] w-full rounded bg-transparent py-[0.32rem] px-3 leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-black dark:placeholder:text-neutral-600 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-100"
                     id="exampleFormControlInput22"
@@ -102,7 +102,7 @@ function Signin(){
                 </div>
                 <div class="mb-6 flex items-center justify-between">
                   <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
-                    <a href="#!"> Forgot password?</a>
+                    <a href="./ForgetPassword"> Forgot password?</a>
                   </div>
                 </div>
 

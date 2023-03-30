@@ -1,0 +1,20 @@
+.name{
+    padding-top: 10px;
+    background-image: url(https://i.pinimg.com/originals/10/9f/ed/109fede3ba7436d28b5bae73d26f8a8e.jpg);
+    background-size: contain;
+    width: 100%;
+    padding-bottom: 150px;
+    text-align: left;
+    
+    
+}
+
+.design{
+    font-size: 30px;
+    padding-top: 20px;
+    color:#2196F3 ;
+}
+.packages{
+    font-size: 30px; 
+    color: #2196F3;
+}
