@@ -9,13 +9,11 @@ import StarOutlineIcon from "@mui/icons-material/StarOutline";
 function PhotographerOverview() {
   return (
     <div>
-      <div class="min-h-screen container  mx-auto">
-        <img
-          className="w-full h-full"
-          src="https://wedabout.com/blog/wp-content/uploads/2017/07/St.-Regis.jpg"
-          alt="wedding event"
-        />
-      </div>
+      <img
+        className="w-screen"
+        src="https://wedabout.com/blog/wp-content/uploads/2017/07/St.-Regis.jpg"
+        alt="wedding event"
+      ></img>
       {/* <img className='w-full' src={img} alt="sunset"></img>  */}
       <section className="flex px-10 py-24 ">
         <span class=" bg-black inline-flex w-3/4 px-6 py-10 mt-8 ml-10">
@@ -54,7 +52,7 @@ function PhotographerOverview() {
         </div>
       </section>
       <section className="text-gray-600 body-font">
-        <h1 className=" design text-center">My portfolio</h1>
+        <h1 className=" design text-center ">My portfolio</h1>
         <h1 className="title-font sm:text-2xl  mt-5 text-black font-weight: 900 text-left pl-16">
           Photo:
         </h1>
@@ -143,7 +141,7 @@ function PhotographerOverview() {
                 <pre>50 Pages Photo Album</pre>
                 <pre class="leading-relaxed mb-5">Pendrive</pre>
                 <h1 className="text-center title-font sm:text-2xl text-black mb-6">
-                  Rs. 20,000
+                  Rs. 30,000
                 </h1>
                 <h1 className="text-center title-font sm:text-2xl text-black ">
                   SILVER
@@ -167,7 +165,7 @@ function PhotographerOverview() {
                 <pre>50 Pages Photo Album</pre>
                 <pre class="leading-relaxed mb-5">Pendrive</pre>
                 <h1 className="text-center title-font sm:text-2xl text-black mb-6">
-                  Rs. 20,000
+                  Rs. 50,000
                 </h1>
                 <h1 className="text-center title-font sm:text-2xl text-black ">
                   GOLD
@@ -191,7 +189,7 @@ function PhotographerOverview() {
                 <pre>50 Pages Photo Album</pre>
                 <pre class="leading-relaxed mb-5">Pendrive</pre>
                 <h1 className="text-center title-font sm:text-2xl text-black mb-6">
-                  Rs. 20,000
+                  Rs. 75,000
                 </h1>
                 <h1 className="text-center title-font sm:text-2xl text-black   ">
                   PLATINIUM

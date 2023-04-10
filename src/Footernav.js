@@ -15,32 +15,32 @@ function Footernav() {
               <nav class="list-none mb-10">
                 <li>
                   <a
-                    href="/"
                     class="text-gray-600 hover:text-blue-500 hover:cursor-pointer"
+                    href="/"
                   >
                     Home
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/"
                     class="text-gray-600 hover:text-blue-500 hover:cursor-pointer"
+                    href="/PhotographerOverview"
                   >
                     Photographers
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/"
                     class="text-gray-600 hover:text-blue-500 hover:cursor-pointer"
+                    href="/Booking"
                   >
                     About US
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/"
                     class="text-gray-600 hover:text-blue-500 hover:cursor-pointer"
+                    href="/Contactus"
                   >
                     Contact Us
                   </a>
@@ -49,38 +49,41 @@ function Footernav() {
             </div>
             {/* ---------------------------Categories------------------------------------- */}
             <div class="lg:w-1/5 md:w-1/2 w-full px-4 text-center">
-              <h2 class="title-font font-medium text-blue-500 tracking-widest text-sm mb-3">
+              <h2
+                class="title-font font-medium text-blue-500 tracking-widest text-sm mb-3"
+                href="#!"
+              >
                 Categories
               </h2>
               <nav class="list-none mb-10">
                 <li>
                   <a
-                    href="/"
                     class="text-gray-600 hover:text-blue-500 hover:cursor-pointer"
+                    href="#!"
                   >
                     All
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/"
                     class="text-gray-600 hover:text-blue-500 hover:cursor-pointer"
+                    href="#!"
                   >
                     Wedding
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/"
                     class="text-gray-600 hover:text-blue-500 hover:cursor-pointer"
+                    href="#!"
                   >
                     Birthday
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/"
                     class="text-gray-600 hover:text-blue-500 hover:cursor-pointer"
+                    href="#!"
                   >
                     Professional
                   </a>
@@ -89,22 +92,25 @@ function Footernav() {
             </div>
             {/* --------------------------- Others -------------------------------- */}
             <div class="lg:w-1/5 md:w-1/2 w-full px-4 text-center">
-              <h2 class="title-font font-medium text-blue-500 tracking-widest text-sm mb-3">
+              <h2
+                class="title-font font-medium text-blue-500 tracking-widest text-sm mb-3"
+                href="#!"
+              >
                 Others
               </h2>
               <nav class="list-none mb-10">
                 <li>
                   <a
-                    href="/"
                     class="text-gray-600 hover:text-blue-500 hover:cursor-pointer"
+                    href="#!"
                   >
                     Terms Of Use
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/"
                     class="text-gray-600 hover:text-blue-500 hover:cursor-pointer"
+                    href="#!"
                   >
                     Privacy Policy
                   </a>
@@ -119,16 +125,16 @@ function Footernav() {
               <nav class="list-none mb-10">
                 <li>
                   <a
-                    href="/"
                     class="text-gray-600 hover:text-blue-500 hover:cursor-pointer"
+                    href="#!"
                   >
                     +91 85125 81845
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/"
                     class="text-gray-600 hover:text-blue-500 hover:cursor-pointer"
+                    href="#!"
                   >
                     support@eventclick.com
                   </a>
@@ -143,13 +149,13 @@ function Footernav() {
               <nav class="list-none mb-10">
                 <li>
                   <a
-                    href="/"
                     class="text-gray-600 hover:text-gray-800 hover:cursor-pointer"
+                    href="#!"
                   >
                     <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
                       <a
-                        href="/"
                         class="ml-3 text-gray-600 hover:text-blue-500"
+                        href="#!"
                       >
                         <svg
                           fill="currentColor"
@@ -164,8 +170,8 @@ function Footernav() {
                       </a>
                       {/* Insta logo */}
                       <a
-                        href="/"
                         class="ml-3 text-gray-600 hover:text-blue-500 hover:cursor-pointer"
+                        href="#!"
                       >
                         <svg
                           fill="none"
@@ -189,8 +195,8 @@ function Footernav() {
                       </a>
                       {/* linkedin logo */}
                       <a
-                        href="/"
                         class="ml-3 text-gray-600 hover:text-blue-500 hover:cursor-pointer"
+                        href="#!"
                       >
                         <svg
                           fill="currentColor"
@@ -210,8 +216,8 @@ function Footernav() {
                       </a>
                       {/* Pinterest logo */}
                       <a
-                        href="/"
                         class="ml-2.5 text-gray-600 hover:text-blue-500 hover:cursor-pointer"
+                        href="#!"
                       >
                         <svg
                           fill="currentColor"
