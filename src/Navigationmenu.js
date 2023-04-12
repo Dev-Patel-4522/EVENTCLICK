@@ -22,6 +22,9 @@ function Navigationmenu() {
             <Link class="mr-5 hover:text-gray-900" to="/Portfolio">
               ABOUT US
             </Link>
+            <Link class="mr-5 hover:text-gray-900" to="/Photographer">
+              PHOTOGRAPHERS
+            </Link>
             <Link class="mr-5 hover:text-gray-900" to="/Setting">
               SETTINGS
             </Link>

@@ -43,7 +43,9 @@ function Contactus(){
 
   return (
     <div>
-      {/* <form onSubmit={handleSubmit}> */}
+      <form 
+        // onSubmit={handleSubmit}
+      >
       <section class="text-gray-600 body-font relative">
         <div class=" px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap mr-10">
           <img
@@ -115,7 +117,7 @@ function Contactus(){
           </div>
         </div>
       </section>
-    {/* </form> */}
+    </form>
   </div>
   );
 }

@@ -6,10 +6,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import Setting from "./Setting";
 import Navigationmenu from "./Navigationmenu";
+import Upcoming from "./Upcoming";
 import Booking from "./Booking";
 import Contactus from "./Contactus";
 import Portfolio from "./Portfolio";
 import PhotographerOverview from "./PhotographerOverview";
+// import Photographer from "./Photographer";
 import Signin from "./Signin";
 import Signup from './Signup';
 import ForgetPassword from "./ForgetPassword";
@@ -35,7 +37,9 @@ function App() {
             path="/PhotographerOverview"
             element={<PhotographerOverview />}
           />
+          {/* <Route path="/Photographer" element={<Photographer />} /> */}
           <Route path="/Portfolio" element={<Portfolio />} />
+          <Route path="/Upcoming" element={<Upcoming />} />
           <Route path="/Setting" element={<Setting />} />
           <Route path="/Contactus" element={<Contactus />} />
           <Route path="/Signin" element={<Signin />} />
