@@ -261,7 +261,7 @@ function Home() {
         </div>
       </body>
       <div>
-        <h1 class="text-blue-500 font-extrabold text-5xl py-20">
+        <h1 class="text-center text-blue-500 font-extrabold text-5xl py-20">
           Top Rated Photographer
         </h1>
       </div>
@@ -325,7 +325,7 @@ function Home() {
       </section>
       <div className="bg-blue-100">
         <div>
-          <h1 class="text-blue-500 font-extrabold text-5xl py-20">
+          <h1 class="text-center text-blue-500 font-extrabold text-5xl py-20">
             Select Photographer By Events
           </h1>
         </div>

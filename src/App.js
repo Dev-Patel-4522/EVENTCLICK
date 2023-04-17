@@ -11,13 +11,13 @@ import Booking from "./Booking";
 import Contactus from "./Contactus";
 import Portfolio from "./Portfolio";
 import PhotographerOverview from "./PhotographerOverview";
-// import Photographer from "./Photographer";
 import Signin from "./Signin";
 import Signup from './Signup';
 import ForgetPassword from "./ForgetPassword";
 import Footernav from './Footernav';
 
 
+import Photographer from "./Photographer";
 // import EXAMPLE from './EXAMPLE';
 // import RegistrationForm from './RegistrationForm';
 // import { LoginScreen } from "./LoginScreen";
@@ -37,7 +37,7 @@ function App() {
             path="/PhotographerOverview"
             element={<PhotographerOverview />}
           />
-          {/* <Route path="/Photographer" element={<Photographer />} /> */}
+          <Route path="/Photographer" element={<Photographer />} />
           <Route path="/Portfolio" element={<Portfolio />} />
           <Route path="/Upcoming" element={<Upcoming />} />
           <Route path="/Setting" element={<Setting />} />

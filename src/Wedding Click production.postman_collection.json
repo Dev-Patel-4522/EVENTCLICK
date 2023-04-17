@@ -1,0 +1,3548 @@
+{
+	"info": {
+		"_postman_id": "38356f1f-58eb-4c64-a449-784d83019c5f",
+		"name": "Wedding Click production",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"user\": {\n    \"first_name\": \"Yash\",\n    \"last_name\": \"Patel\",\n    \"mobile_number\": \"+91 7878712456\",\n    \"email\":\"yash123@gmail.com\",\n    \"password\":\"password\",\n    \"password_confirmation\": \"password\",\n    \"role\": 2\n  },\n  \"client_id\": \"cYfCsmgtFQ3-8VCeHkBrlfJnwjCFEBHZmnlSQMMtmoY\",\n  \"client_secret\": \"eKU7TnDmHJwUKkQnTRLeTXMgYE36v7XzsXMFvVaOzW8\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/sign_up",
+					"protocol": "http",
+					"host": [
+						"ec2-3-111-47-183",
+						"ap-south-1",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"sign_up"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Signup",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"user\": {\n    \"first_name\": \"Nirmal\",\n    \"last_name\": \"Vaja\",\n    \"mobile_number\": \"+91 9909012345\",\n    \"email\":\"nirmalvaja123@gmail.com\",\n    \"password\":\"password\",\n    \"password_confirmation\": \"password\",\n    \"role\": 1\n  },\n  \"client_id\": \"cYfCsmgtFQ3-8VCeHkBrlfJnwjCFEBHZmnlSQMMtmoY\",\n  \"client_secret\": \"eKU7TnDmHJwUKkQnTRLeTXMgYE36v7XzsXMFvVaOzW8\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/sign_up",
+							"protocol": "http",
+							"host": [
+								"ec2-3-111-47-183",
+								"ap-south-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"api",
+								"sign_up"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Mar 2023 06:25:05 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"9e6f0c14a4aff1e0e2f76ca0e5564ed5\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "875ae1ab-9a2b-4eb5-8fd2-931e337cf61f"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.383096"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User created successfully.\",\n    \"success\": true,\n    \"data\": {\n        \"access_token\": \"hYQ04KmvJ0c2GTe95dGP-S57jGkfQ6HltfoQtYTIBCg\",\n        \"token_type\": \"bearer\",\n        \"expires_in\": 7200,\n        \"refresh_token\": \"RE-Ggu_wVhcCmfMXKwAlmFAwHoAKpfL33TLY_yikGQ4\",\n        \"created_at\": 1678083905,\n        \"user_id\": 2,\n        \"first_name\": \"Nirmal\",\n        \"last_name\": \"Vaja\",\n        \"email\": \"nirmalvaja123@gmail.com\",\n        \"mobile_number\": \"+91 9909012345\",\n        \"role\": \"Photographer\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "SignIn",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"harshsuthar0718@gmail.com\",\n    \"client_id\": \"cYfCsmgtFQ3-8VCeHkBrlfJnwjCFEBHZmnlSQMMtmoY\",\n    \"client_secret\": \"eKU7TnDmHJwUKkQnTRLeTXMgYE36v7XzsXMFvVaOzW8\",\n    \"password\": \"password\",\n    \"grant_type\": \"password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/login",
+					"protocol": "http",
+					"host": [
+						"ec2-3-111-47-183",
+						"ap-south-1",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "SignIn",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"harshsuthar0718@gmail.com\",\n    \"client_id\": \"cYfCsmgtFQ3-8VCeHkBrlfJnwjCFEBHZmnlSQMMtmoY\",\n    \"client_secret\": \"eKU7TnDmHJwUKkQnTRLeTXMgYE36v7XzsXMFvVaOzW8\",\n    \"password\": \"password\",\n    \"grant_type\": \"password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/login",
+							"protocol": "http",
+							"host": [
+								"ec2-3-111-47-183",
+								"ap-south-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Mar 2023 06:25:41 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"37d639c096ad3863f079e960d729f6e6\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "ba6c5e90-a7bb-4fad-9000-a6862ff76fcc"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.310587"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\"message\":\"User signed in successfully.\",\"success\":true,\"data\":{\"access_token\":\"v7BGuXPBhREhXQffN70KYtuuI-LLE53vdURKnMJP-7U\",\"token_type\":\"Bearer\",\"expires_in\":7200,\"refresh_token\":\"bEBnbi6kdhu1A59kFePoDI2ga9LI_pIOglgO4GzCBe8\",\"created_at\":1678083941,\"user_id\":1,\"first_name\":\"Harsh\",\"last_name\":\"Suthar\",\"email\":\"harshsuthar0718@gmail.com\",\"mobile_number\":\"+91 9090012456\",\"role\":\"Photographer\"}}"
+				}
+			]
+		},
+		{
+			"name": "Get all contact us form data",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "y_mIklmsxoon55Ga2Ae0RdgeFU0cZFO4RE63Zb6S3w8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/all_contact_form_data",
+					"protocol": "http",
+					"host": [
+						"ec2-3-111-47-183",
+						"ap-south-1",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"all_contact_form_data"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get all contact us form data",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/all_contact_form_data",
+							"protocol": "http",
+							"host": [
+								"ec2-3-111-47-183",
+								"ap-south-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"api",
+								"all_contact_form_data"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Mar 2023 08:48:45 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a1c8beb7a8472b32fe10528adfb72f4d\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "f847a0ea-f766-4b1a-985f-eede7e6259c8"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.007902"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"ContactUs form data are listed here\",\n    \"success\": true,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"user_name\": \"Rutvik\",\n            \"email\": \"rutvik123@yopmail.com\",\n            \"phone_number\": \"+91 8908934567\",\n            \"message\": \"This is message!\",\n            \"no_of_days\": 1,\n            \"event_type\": \"Wedding\",\n            \"function_start_date\": \"2023-03-08\"\n        },\n        {\n            \"id\": 2,\n            \"user_name\": \"Anuj\",\n            \"email\": \"anuj123@yopmail.com\",\n            \"phone_number\": \"+91 8908934567\",\n            \"message\": \"This is message!\",\n            \"no_of_days\": 1,\n            \"event_type\": \"Pre-Wedding\",\n            \"function_start_date\": \"2023-03-08\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Get all Meeting form data",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "y_mIklmsxoon55Ga2Ae0RdgeFU0cZFO4RE63Zb6S3w8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/all_meeting_form_data",
+					"protocol": "http",
+					"host": [
+						"ec2-3-111-47-183",
+						"ap-south-1",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"all_meeting_form_data"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get all Meeting form data",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/all_meeting_form_data",
+							"protocol": "http",
+							"host": [
+								"ec2-3-111-47-183",
+								"ap-south-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"api",
+								"all_meeting_form_data"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Mar 2023 08:49:00 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"d86ebbfe873c0d229720743e69dd6bc9\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "83b0aa31-264a-43a0-886e-0f77ecee48ba"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.014111"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Meeting form data are listed here\",\n    \"success\": true,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"user_name\": \"Nirmal\",\n            \"email\": \"nirmal123@yopmail.com\",\n            \"phone_number\": \"+91 9099212345\",\n            \"subject\": \"About birthday\",\n            \"function_date_time\": \"2023-03-07T10:50:34.714Z\"\n        },\n        {\n            \"id\": 2,\n            \"user_name\": \"Anuj\",\n            \"email\": \"anuj123@yopmail.com\",\n            \"phone_number\": \"+91 9099212345\",\n            \"subject\": \"About Marriage!\",\n            \"function_date_time\": \"2023-03-07T10:50:34.714Z\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Customers list",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "y_mIklmsxoon55Ga2Ae0RdgeFU0cZFO4RE63Zb6S3w8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/customers_list",
+					"protocol": "http",
+					"host": [
+						"ec2-3-111-47-183",
+						"ap-south-1",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"customers_list"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Customers list",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/customers_list",
+							"protocol": "http",
+							"host": [
+								"ec2-3-111-47-183",
+								"ap-south-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"api",
+								"customers_list"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Mar 2023 08:48:00 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"33160af64df1aee2f9a1861199584de5\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "ff5affbc-b21e-4792-9373-d80250760a53"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.009408"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Customers data are listed here\",\n    \"success\": true,\n    \"data\": [\n        {\n            \"id\": 4,\n            \"first_name\": \"Rutvik\",\n            \"last_name\": \"Patel\",\n            \"email\": \"rutvik123@gmail.com\",\n            \"mobile_number\": \"+91 8989812345\"\n        },\n        {\n            \"id\": 5,\n            \"first_name\": \"Anuj\",\n            \"last_name\": \"Patel\",\n            \"email\": \"anuj123@gmail.com\",\n            \"mobile_number\": \"+91 8980012345\"\n        },\n        {\n            \"id\": 6,\n            \"first_name\": \"Yash\",\n            \"last_name\": \"Patel\",\n            \"email\": \"yash123@gmail.com\",\n            \"mobile_number\": \"+91 7878712456\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Photographers list",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "y_mIklmsxoon55Ga2Ae0RdgeFU0cZFO4RE63Zb6S3w8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/photographers_list",
+					"protocol": "http",
+					"host": [
+						"ec2-3-111-47-183",
+						"ap-south-1",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"photographers_list"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Photographers list",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/photographers_list",
+							"protocol": "http",
+							"host": [
+								"ec2-3-111-47-183",
+								"ap-south-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"api",
+								"photographers_list"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Mar 2023 08:48:20 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1f092f1f901be43e9fa8b7237597bd22\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "d7b0e6f0-9a98-499e-a79e-3312f6fcc63e"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.007272"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Photographers data are listed here\",\n    \"success\": true,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"first_name\": \"Harsh\",\n            \"last_name\": \"Suthar\",\n            \"email\": \"harshsuthar0718@gmail.com\",\n            \"mobile_number\": \"+91 9090012456\"\n        },\n        {\n            \"id\": 2,\n            \"first_name\": \"Nirmal\",\n            \"last_name\": \"Vaja\",\n            \"email\": \"nirmalvaja123@gmail.com\",\n            \"mobile_number\": \"+91 9909012345\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Save bank details",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "qrkUq1SfG4y7eEZ2Yzsy3JQ1l1-jBnIxMG6Hf8KvFsQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"bank_name\": \"SBI\",\n    \"branch_name\": \"Ghatlodia\",\n    \"account_number\": \"1234567890\",\n    \"ifsc_code\": \"Q213E12\",\n    \"acc_holder_name\": \"Harsh Suthar\",\n    \"city_name\": \"Ahmedabad\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/save_bank_details",
+					"protocol": "http",
+					"host": [
+						"ec2-3-111-47-183",
+						"ap-south-1",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"save_bank_details"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Save bank details",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"bank_name\": \"SBI\",\n    \"branch_name\": \"Ghatlodia\",\n    \"account_number\": \"1234567890\",\n    \"ifsc_code\": \"Q213E12\",\n    \"acc_holder_name\": \"Harsh Suthar\",\n    \"city_name\": \"Ahmedabad\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/save_bank_details",
+							"protocol": "http",
+							"host": [
+								"ec2-3-111-47-183",
+								"ap-south-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"api",
+								"save_bank_details"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Mar 2023 08:41:37 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"bd79e5ec015ebe73aa770934f0dd924b\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "fe730250-794e-477d-86fa-c8957f877017"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.009401"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Bank detail saved successfully.\",\n    \"success\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Get bank details",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Ik2tLrlNV-2u6EPRthFH4VW0RAtHH6yoZRycEF5jpuY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/get_bank_details",
+					"protocol": "http",
+					"host": [
+						"ec2-3-111-47-183",
+						"ap-south-1",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"get_bank_details"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get bank details",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/get_bank_details",
+							"protocol": "http",
+							"host": [
+								"ec2-3-111-47-183",
+								"ap-south-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"api",
+								"get_bank_details"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Mar 2023 11:10:16 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1fc28b5efe743bddeead6a005b638054\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "4222c9c2-2774-4488-bf19-6d34bc024a4f"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.016428"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Bank detail fetched successfully.\",\n    \"success\": true,\n    \"data\": {\n        \"bank_detail\": {\n            \"id\": 1,\n            \"bank_name\": \"SBI\",\n            \"branch_name\": \"Ghatlodia\",\n            \"account_number\": \"1234567890\",\n            \"ifsc_code\": \"Q213E12\",\n            \"acc_holder_name\": \"Harsh Suthar\",\n            \"city_name\": \"Ahmedabad\",\n            \"user_id\": 1\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Edit bank details",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Ik2tLrlNV-2u6EPRthFH4VW0RAtHH6yoZRycEF5jpuY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"bank_name\": \"HDFC Bank\",\n    \"branch_name\": \"Chandlodia\",\n    \"account_number\": \"9087654321\",\n    \"ifsc_code\": \"Q213E12\",\n    \"acc_holder_name\": \"Harsh Suthar\",\n    \"city_name\": \"Ahmedabad\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/edit_bank_details",
+					"protocol": "http",
+					"host": [
+						"ec2-3-111-47-183",
+						"ap-south-1",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"edit_bank_details"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Edit bank details",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"bank_name\": \"HDFC Bank\",\n    \"branch_name\": \"Chandlodia\",\n    \"account_number\": \"9087654321\",\n    \"ifsc_code\": \"Q213E12\",\n    \"acc_holder_name\": \"Harsh Suthar\",\n    \"city_name\": \"Ahmedabad\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/edit_bank_details",
+							"protocol": "http",
+							"host": [
+								"ec2-3-111-47-183",
+								"ap-south-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"api",
+								"edit_bank_details"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Mar 2023 12:17:45 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c7deea6e65c5bf0e5b916439d4a4ee8a\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "0e3c1b63-d48b-43c0-bad6-e0fd2bfa11e9"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.150561"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Bank details updated successfully.\",\n    \"success\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Save personal information",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "EwrL7d1ElrJlNsYWPiHspsIpfsl-QMXBY0t-27jAzu8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"profile\":{\n        \"brand_name\": \"Harsh Photography\",\n        \"additional_mobile_number\": \"+91 8990912345\",\n        \"website_link\": \"https://github.com/harsh291199/Wedding-Click-Backend\",\n        \"facebook_url\": \"\",\n        \"instagram_url\": \"\",\n        \"youtube_link\": \"\",\n        \"experience\": \"less than 1 year\",\n        \"services\": \"Wedding, PreWedding\",\n        \"city\": \"Ahmedabad\",\n        \"user_cancellation_policy\": \"No Refund offered\",\n        \"cancellation_policy\": \"No Refund offered\",\n        \"terms_and_conditions\": \" 50% Amount Refundable\",\n        \"awards_received\": \"Photographer of the year-2022, National Photography\",\n        \"cities_covered\": \"Ahmedabad, Vadodara, Surat, Anand, Idar\",\n        \"weeks_for_delivery\": \"4 weeks\",\n        \"payment_terms\": \"Upto 50% advance\",\n        \"travel_and_lodging_cost\": \"Cost of stay & Travel borne by client\",\n        \"additional_info\": \"I am specialist Photographer for Pre-Wedding, Wedding & Reception\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/save_personal_info",
+					"protocol": "http",
+					"host": [
+						"ec2-3-111-47-183",
+						"ap-south-1",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"save_personal_info"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Save personal information",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"profile\":{\n        \"brand_name\": \"Harsh Photography\",\n        \"additional_mobile_number\": \"+91 8990912345\",\n        \"website_link\": \"https://github.com/harsh291199/Wedding-Click-Backend\",\n        \"facebook_url\": \"\",\n        \"instagram_url\": \"\",\n        \"youtube_link\": \"\",\n        \"experience\": \"less than 1 year\",\n        \"services\": \"Wedding, PreWedding\",\n        \"city\": \"Ahmedabad\",\n        \"user_cancellation_policy\": \"No Refund offered\",\n        \"cancellation_policy\": \"No Refund offered\",\n        \"terms_and_conditions\": \" 50% Amount Refundable\",\n        \"awards_received\": \"Photographer of the year-2022, National Photography\",\n        \"cities_covered\": \"Ahmedabad, Vadodara, Surat, Anand, Idar\",\n        \"weeks_for_delivery\": \"4 weeks\",\n        \"payment_terms\": \"Upto 50% advance\",\n        \"travel_and_lodging_cost\": \"Cost of stay & Travel borne by client\",\n        \"additional_info\": \"I am specialist Photographer for Pre-Wedding, Wedding & Reception\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/save_personal_info",
+							"protocol": "http",
+							"host": [
+								"ec2-3-111-47-183",
+								"ap-south-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"api",
+								"save_personal_info"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Mar 2023 08:51:10 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"53f3179de4405fb86b41f7eabee855a3\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "aeb2ca2f-5b0e-4a19-a150-cbbdbb1fc93e"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.034723"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Profile information saved successfully.\",\n    \"success\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Get personal information",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Ik2tLrlNV-2u6EPRthFH4VW0RAtHH6yoZRycEF5jpuY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/get_personal_info",
+					"protocol": "http",
+					"host": [
+						"ec2-3-111-47-183",
+						"ap-south-1",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"get_personal_info"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get personal information",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/get_personal_info",
+							"protocol": "http",
+							"host": [
+								"ec2-3-111-47-183",
+								"ap-south-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"api",
+								"get_personal_info"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Mar 2023 11:11:29 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c04f5e191cacf90abea2106eb4ea9bf9\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "f2a7c69c-3517-41d2-a27d-b9e2d4005a9c"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.031617"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Profile information fetched successfully.\",\n    \"success\": true,\n    \"data\": {\n        \"personal_info\": {\n            \"id\": 1,\n            \"email\": \"harshsuthar0718@gmail.com\",\n            \"first_name\": \"Harsh\",\n            \"last_name\": \"Suthar\",\n            \"mobile_number\": \"+91 9090012456\",\n            \"role\": \"photographer\"\n        },\n        \"profile_info\": {\n            \"id\": 1,\n            \"brand_name\": \"Harsh Photography\",\n            \"additional_mobile_number\": \"+91 8990912345\",\n            \"website_link\": \"https://github.com/harsh291199/Wedding-Click-Backend\",\n            \"facebook_url\": \"\",\n            \"instagram_url\": \"\",\n            \"youtube_link\": \"\",\n            \"address\": null,\n            \"pin_code\": null,\n            \"city\": \"Ahmedabad\",\n            \"state\": null,\n            \"user_id\": 1,\n            \"sponsored\": null,\n            \"category\": null,\n            \"contact_person_name\": null,\n            \"additional_info\": \"I am specialist Photographer for Pre-Wedding, Wedding & Reception\",\n            \"value_of_most_booked_package\": null,\n            \"service_of_most_booked_package\": null,\n            \"days_of_service\": null,\n            \"user_cancellation_policy\": \"No Refund offered\",\n            \"cancellation_policy\": \"No Refund offered\",\n            \"terms_and_conditions\": \" 50% Amount Refundable\",\n            \"awards_received\": \"Photographer of the year-2022, National Photography\",\n            \"cities_covered\": \"Ahmedabad, Vadodara, Surat, Anand, Idar\",\n            \"weeks_for_delivery\": \"4 weeks\",\n            \"services\": \"Wedding, PreWedding\",\n            \"speciality\": null,\n            \"experience\": \"less than 1 year\",\n            \"number_of_pictures\": null,\n            \"payment_terms\": \"Upto 50% advance\",\n            \"travel_and_lodging_cost\": \"Cost of stay & Travel borne by client\",\n            \"able_to_travel\": null,\n            \"languages_known\": null\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Edit personal information",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Ik2tLrlNV-2u6EPRthFH4VW0RAtHH6yoZRycEF5jpuY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"profile\":{\n        \"brand_name\": \"HS Photography\",\n        \"additional_mobile_number\": \"+91 8990912345\",\n        \"website_link\": \"https://github.com/harsh291199/Wedding-Click-Backend\",\n        \"facebook_url\": \"\",\n        \"instagram_url\": \"\",\n        \"youtube_link\": \"\",\n        \"experience\": \"1-3 Years\",\n        \"services\": \"Wedding, PreWedding, Anniversary, Modelling\",\n        \"city\": \"Vadodara\",\n        \"user_cancellation_policy\": \"No Refund offered\",\n        \"cancellation_policy\": \"No Refund offered\",\n        \"terms_and_conditions\": \" 50% Amount Refundable\",\n        \"awards_received\": \"Photographer of the year-2022, National Photography\",\n        \"cities_covered\": \"Ahmedabad, Vadodara, Surat, Anand, Idar\",\n        \"weeks_for_delivery\": \"3 weeks\",\n        \"payment_terms\": \"Upto 50% advance\",\n        \"travel_and_lodging_cost\": \"Cost of stay & Travel borne by client\",\n        \"additional_info\": \"I am specialist Photographer for Pre-Wedding, Wedding & Reception\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/edit_personal_info",
+					"protocol": "http",
+					"host": [
+						"ec2-3-111-47-183",
+						"ap-south-1",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"edit_personal_info"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Edit personal information",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"profile\":{\n        \"brand_name\": \"HS Photography\",\n        \"additional_mobile_number\": \"+91 8990912345\",\n        \"website_link\": \"https://github.com/harsh291199/Wedding-Click-Backend\",\n        \"facebook_url\": \"\",\n        \"instagram_url\": \"\",\n        \"youtube_link\": \"\",\n        \"experience\": \"1-3 Years\",\n        \"services\": \"Wedding, PreWedding, Anniversary, Modelling\",\n        \"city\": \"Vadodara\",\n        \"user_cancellation_policy\": \"No Refund offered\",\n        \"cancellation_policy\": \"No Refund offered\",\n        \"terms_and_conditions\": \" 50% Amount Refundable\",\n        \"awards_received\": \"Photographer of the year-2022, National Photography\",\n        \"cities_covered\": \"Ahmedabad, Vadodara, Surat, Anand, Idar\",\n        \"weeks_for_delivery\": \"3 weeks\",\n        \"payment_terms\": \"Upto 50% advance\",\n        \"travel_and_lodging_cost\": \"Cost of stay & Travel borne by client\",\n        \"additional_info\": \"I am specialist Photographer for Pre-Wedding, Wedding & Reception\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/edit_personal_info",
+							"protocol": "http",
+							"host": [
+								"ec2-3-111-47-183",
+								"ap-south-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"api",
+								"edit_personal_info"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Mar 2023 12:19:05 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"32c4ac89ec0e340d6bdac32ebfc7ae9e\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "e0dcdf67-d0d2-416f-85d7-737183a7d86b"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.041080"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Profile information updated successfully.\",\n    \"success\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "All event details",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "EwrL7d1ElrJlNsYWPiHspsIpfsl-QMXBY0t-27jAzu8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/all_event_details",
+					"protocol": "http",
+					"host": [
+						"ec2-3-111-47-183",
+						"ap-south-1",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"all_event_details"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "All event details",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/all_event_details",
+							"protocol": "http",
+							"host": [
+								"ec2-3-111-47-183",
+								"ap-south-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"api",
+								"all_event_details"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Mar 2023 08:59:08 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2cae8f4de2c867a2e6161863a79318ab\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "05057c7c-8e3c-4a6e-94cc-23d05d8a0fbb"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.050485"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Events list fetched successfully\",\n    \"success\": true,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"event_type\": \"Wedding\"\n        },\n        {\n            \"id\": 2,\n            \"event_type\": \"Pre-Wedding\"\n        },\n        {\n            \"id\": 3,\n            \"event_type\": \"Anniversary\"\n        },\n        {\n            \"id\": 4,\n            \"event_type\": \"Baby Shower\"\n        },\n        {\n            \"id\": 5,\n            \"event_type\": \"Birthday\"\n        },\n        {\n            \"id\": 6,\n            \"event_type\": \"Modelling\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Save Portfolio details",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "EwrL7d1ElrJlNsYWPiHspsIpfsl-QMXBY0t-27jAzu8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "images[]",
+							"type": "file",
+							"src": [
+								"/home/harsh/Downloads/Animal for testing/shark.jpg",
+								"/home/harsh/Downloads/Animal for testing/white_shark.jpg",
+								"/home/harsh/Downloads/google.jpg"
+							]
+						},
+						{
+							"key": "videos[]",
+							"type": "file",
+							"src": "/home/harsh/Downloads/SampleVideo_1280x720_2mb.mp4"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/save_event_details?event_type=Anniversary",
+					"protocol": "http",
+					"host": [
+						"ec2-3-111-47-183",
+						"ap-south-1",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"save_event_details"
+					],
+					"query": [
+						{
+							"key": "event_type",
+							"value": "Anniversary"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Save Portfolio details",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "images[]",
+									"type": "file",
+									"src": [
+										"/home/harsh/Downloads/Animal for testing/shark.jpg",
+										"/home/harsh/Downloads/Animal for testing/white_shark.jpg",
+										"/home/harsh/Downloads/google.jpg"
+									]
+								},
+								{
+									"key": "videos[]",
+									"type": "file",
+									"src": "/home/harsh/Downloads/SampleVideo_1280x720_2mb.mp4"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/save_event_details?event_type=Anniversary",
+							"protocol": "http",
+							"host": [
+								"ec2-3-111-47-183",
+								"ap-south-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"api",
+								"save_event_details"
+							],
+							"query": [
+								{
+									"key": "event_type",
+									"value": "Anniversary"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Mar 2023 09:02:55 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7296130f9dd1fb3346755576a14cbfa2\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "acad9c56-daaf-45f9-93a3-8ed7a1d1ab56"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.091710"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Event images/videos uploaded successfully.\",\n    \"success\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Get event(portfolio) details",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "EwrL7d1ElrJlNsYWPiHspsIpfsl-QMXBY0t-27jAzu8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/get_event_details?event_type=Anniversary",
+					"protocol": "http",
+					"host": [
+						"ec2-3-111-47-183",
+						"ap-south-1",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"get_event_details"
+					],
+					"query": [
+						{
+							"key": "event_type",
+							"value": "Anniversary"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get event(portfolio) details",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/get_event_details?event_type=Anniversary",
+							"protocol": "http",
+							"host": [
+								"ec2-3-111-47-183",
+								"ap-south-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"api",
+								"get_event_details"
+							],
+							"query": [
+								{
+									"key": "event_type",
+									"value": "Anniversary"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Mar 2023 09:06:45 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"be473e5e2991d0d8870d71879fa2d2f3\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "b971f45b-8218-4d13-80ba-2a71fe01c594"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.015502"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Event images/videos fetched successfully.\",\n    \"success\": true,\n    \"data\": {\n        \"images\": [\n            \"http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--724c4f75509f47d160c764f9bbd13ca895998e0d/shark.jpg\",\n            \"http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a7f9bf62604359075235f6393bc64cbf0839b7bd/white_shark.jpg\",\n            \"http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0e729e6812c1168b001877eeec158785e693e121/google.jpg\"\n        ],\n        \"videos\": [\n            \"http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--abd2ed5f21008b59153046f0dbcbc9225b7cd08f/SampleVideo_1280x720_2mb.mp4\"\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "All equipments",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "EwrL7d1ElrJlNsYWPiHspsIpfsl-QMXBY0t-27jAzu8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/all_equipments",
+					"protocol": "http",
+					"host": [
+						"ec2-3-111-47-183",
+						"ap-south-1",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"all_equipments"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "All equipments",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/all_equipments",
+							"protocol": "http",
+							"host": [
+								"ec2-3-111-47-183",
+								"ap-south-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"api",
+								"all_equipments"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Mar 2023 09:11:33 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"faa458e6dfb8c4192ad1757206b9fc2a\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "9d1fc50e-6a63-409a-b51c-5e8573f0db9a"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.028570"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Gadgets list fetched successfully\",\n    \"success\": true,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"gadget_type\": \"Camera\",\n            \"gadget_models\": []\n        },\n        {\n            \"id\": 2,\n            \"gadget_type\": \"Drone\",\n            \"gadget_models\": []\n        },\n        {\n            \"id\": 3,\n            \"gadget_type\": \"Gimbal\",\n            \"gadget_models\": []\n        },\n        {\n            \"id\": 4,\n            \"gadget_type\": \"Lights\",\n            \"gadget_models\": []\n        },\n        {\n            \"id\": 5,\n            \"gadget_type\": \"Lens\",\n            \"gadget_models\": []\n        },\n        {\n            \"id\": 6,\n            \"gadget_type\": \"Other Equipments\",\n            \"gadget_models\": []\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Add equipment models",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "EwrL7d1ElrJlNsYWPiHspsIpfsl-QMXBY0t-27jAzu8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"gadget_models\": [\"Nikon 1\", \"Nikon 2\", \"Nikon 3\", \"Nikon 4\", \"Nikon 5\"]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/add_equipment_models?gadget_type=Camera",
+					"protocol": "http",
+					"host": [
+						"ec2-3-111-47-183",
+						"ap-south-1",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"add_equipment_models"
+					],
+					"query": [
+						{
+							"key": "gadget_type",
+							"value": "Camera"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Add equipment models",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"gadget_models\": [\"Nikon 1\", \"Nikon 2\", \"Nikon 3\", \"Nikon 4\", \"Nikon 5\"]\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/add_equipment_models?gadget_type=Camera",
+							"protocol": "http",
+							"host": [
+								"ec2-3-111-47-183",
+								"ap-south-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"api",
+								"add_equipment_models"
+							],
+							"query": [
+								{
+									"key": "gadget_type",
+									"value": "Camera"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Mar 2023 09:12:48 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"6f29b893a3ccacb4b0f9f7b844a73951\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "8189a3b0-fc46-44f9-909b-1a4c96f7cef0"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.010108"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Equipments added successfully.\",\n    \"success\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Save event pacakges(Silver, Gold, Platinum)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Ik2tLrlNV-2u6EPRthFH4VW0RAtHH6yoZRycEF5jpuY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"silver\":{\n        \"price\": \"5000\",\n        \"specification\": \"You will get the basic package for Anniversary\",\n        \"cameras\": [\"Nikon 1\", \"Nikon 2\"],\n        \"drones\": [\"Drone 1\", \"Drone 2\"],\n        \"gimbals\": [\"Gimbal 1\", \"Gimbal 2\"],\n        \"lights\": [\"Light 1\", \"Light 2\"],\n        \"lenses\": [\"Lens 1\", \"Lens 2\"],\n        \"other_equipments\": [\"Umbrella\", \"XYZ\", \"ABC\"]\n    },\n    \"gold\": {\n        \"price\": \"15,000\",\n        \"specification\": \"You will get the medium package for Anniversary\",\n        \"cameras\": [\"Nikon 3\", \"Nikon 4\"],\n        \"drones\": [\"Drone 2\", \"Drone 3\"],\n        \"gimbals\": [\"Gimbal 2\", \"Gimbal 3\"],\n        \"lights\": [\"Light 1\", \"Light 2\"],\n        \"lenses\": [\"Lens 1\", \"Lens 2\"],\n        \"other_equipments\": [\"Umbrella\", \"XYZ\", \"ABC\"]\n    },\n    \"platinum\": {\n        \"price\": \"25,000\",\n        \"specification\": \"You will get the premium package for Anniversary\",\n        \"cameras\": [\"Nikon 1\", \"Nikon 2\", \"Nikon 3\"],\n        \"drones\": [\"Drone 1\", \"Drone 2\", \"Drone 3\"],\n        \"gimbals\": [\"Gimbal 1\", \"Gimbal 3\"],\n        \"lights\": [\"Light 1\", \"Light 3\"],\n        \"lenses\": [\"Lens 1\", \"Lens 2\"],\n        \"other_equipments\": [\"Umbrella\", \"XYZ\", \"ABC\"]\n    }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/save_event_packages?event_type=Pre-Wedding",
+					"protocol": "http",
+					"host": [
+						"ec2-3-111-47-183",
+						"ap-south-1",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"save_event_packages"
+					],
+					"query": [
+						{
+							"key": "event_type",
+							"value": "Pre-Wedding"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Save event pacakges(Silver, Gold, Platinum)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"silver\":{\n        \"price\": \"5000\",\n        \"specification\": \"You will get the basic package for Anniversary\",\n        \"cameras\": [\"Nikon 1\", \"Nikon 2\"],\n        \"drones\": [\"Drone 1\", \"Drone 2\"],\n        \"gimbals\": [\"Gimbal 1\", \"Gimbal 2\"],\n        \"lights\": [\"Light 1\", \"Light 2\"],\n        \"lenses\": [\"Lens 1\", \"Lens 2\"],\n        \"other_equipments\": [\"Umbrella\", \"XYZ\", \"ABC\"]\n    },\n    \"gold\": {\n        \"price\": \"15,000\",\n        \"specification\": \"You will get the medium package for Anniversary\",\n        \"cameras\": [\"Nikon 3\", \"Nikon 4\"],\n        \"drones\": [\"Drone 2\", \"Drone 3\"],\n        \"gimbals\": [\"Gimbal 2\", \"Gimbal 3\"],\n        \"lights\": [\"Light 1\", \"Light 2\"],\n        \"lenses\": [\"Lens 1\", \"Lens 2\"],\n        \"other_equipments\": [\"Umbrella\", \"XYZ\", \"ABC\"]\n    },\n    \"platinum\": {\n        \"price\": \"25,000\",\n        \"specification\": \"You will get the premium package for Anniversary\",\n        \"cameras\": [\"Nikon 1\", \"Nikon 2\", \"Nikon 3\"],\n        \"drones\": [\"Drone 1\", \"Drone 2\", \"Drone 3\"],\n        \"gimbals\": [\"Gimbal 1\", \"Gimbal 3\"],\n        \"lights\": [\"Light 1\", \"Light 3\"],\n        \"lenses\": [\"Lens 1\", \"Lens 2\"],\n        \"other_equipments\": [\"Umbrella\", \"XYZ\", \"ABC\"]\n    }\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/save_event_packages?event_type=Anniversary",
+							"protocol": "http",
+							"host": [
+								"ec2-3-111-47-183",
+								"ap-south-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"api",
+								"save_event_packages"
+							],
+							"query": [
+								{
+									"key": "event_type",
+									"value": "Anniversary"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Mar 2023 11:06:56 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1efec2b8920f17285fee7bd018e6b6b6\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "0b1f6f55-e898-42ae-ad07-fbf99ab45cae"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.047377"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Event packages saved successfully.\",\n    \"success\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Event packages details",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Ik2tLrlNV-2u6EPRthFH4VW0RAtHH6yoZRycEF5jpuY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/get_event_packages_details?event_type=Anniversary",
+					"protocol": "http",
+					"host": [
+						"ec2-3-111-47-183",
+						"ap-south-1",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"get_event_packages_details"
+					],
+					"query": [
+						{
+							"key": "event_type",
+							"value": "Anniversary"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Event packages details",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/get_event_packages_details?event_type=Anniversary",
+							"protocol": "http",
+							"host": [
+								"ec2-3-111-47-183",
+								"ap-south-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"api",
+								"get_event_packages_details"
+							],
+							"query": [
+								{
+									"key": "event_type",
+									"value": "Anniversary"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Mar 2023 11:07:52 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"00d93b0efc15f19bf8759b74ab4cbb07\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "0ec63c5b-59cc-4af7-bb3e-271afee27b45"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.009278"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Event packages fetched successfully.\",\n    \"success\": true,\n    \"data\": {\n        \"packages\": [\n            {\n                \"id\": 1,\n                \"package_type\": \"silver\",\n                \"price\": \"5000\",\n                \"details\": \"You will get the basic package for Anniversary\",\n                \"event_id\": 3,\n                \"equipments\": {\n                    \"cameras\": [\n                        \"Nikon 1\",\n                        \"Nikon 2\"\n                    ],\n                    \"drones\": [\n                        \"Drone 1\",\n                        \"Drone 2\"\n                    ],\n                    \"gimbals\": [\n                        \"Gimbal 1\",\n                        \"Gimbal 2\"\n                    ],\n                    \"lights\": [\n                        \"Light 1\",\n                        \"Light 2\"\n                    ],\n                    \"lenses\": [\n                        \"Lens 1\",\n                        \"Lens 2\"\n                    ],\n                    \"other_equipments\": [\n                        \"Umbrella\",\n                        \"XYZ\",\n                        \"ABC\"\n                    ]\n                }\n            },\n            {\n                \"id\": 2,\n                \"package_type\": \"gold\",\n                \"price\": \"15,000\",\n                \"details\": \"You will get the medium package for Anniversary\",\n                \"event_id\": 3,\n                \"equipments\": {\n                    \"cameras\": [\n                        \"Nikon 3\",\n                        \"Nikon 4\"\n                    ],\n                    \"drones\": [\n                        \"Drone 2\",\n                        \"Drone 3\"\n                    ],\n                    \"gimbals\": [\n                        \"Gimbal 2\",\n                        \"Gimbal 3\"\n                    ],\n                    \"lights\": [\n                        \"Light 1\",\n                        \"Light 2\"\n                    ],\n                    \"lenses\": [\n                        \"Lens 1\",\n                        \"Lens 2\"\n                    ],\n                    \"other_equipments\": [\n                        \"Umbrella\",\n                        \"XYZ\",\n                        \"ABC\"\n                    ]\n                }\n            },\n            {\n                \"id\": 3,\n                \"package_type\": \"platinum\",\n                \"price\": \"25,000\",\n                \"details\": \"You will get the premium package for Anniversary\",\n                \"event_id\": 3,\n                \"equipments\": {\n                    \"cameras\": [\n                        \"Nikon 1\",\n                        \"Nikon 2\",\n                        \"Nikon 3\"\n                    ],\n                    \"drones\": [\n                        \"Drone 1\",\n                        \"Drone 2\",\n                        \"Drone 3\"\n                    ],\n                    \"gimbals\": [\n                        \"Gimbal 1\",\n                        \"Gimbal 3\"\n                    ],\n                    \"lights\": [\n                        \"Light 1\",\n                        \"Light 3\"\n                    ],\n                    \"lenses\": [\n                        \"Lens 1\",\n                        \"Lens 2\"\n                    ],\n                    \"other_equipments\": [\n                        \"Umbrella\",\n                        \"XYZ\",\n                        \"ABC\"\n                    ]\n                }\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Edit event packages details",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/edit_event_packages_details?event_type=Anniversary",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"edit_event_packages_details"
+					],
+					"query": [
+						{
+							"key": "event_type",
+							"value": "Anniversary"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Edit event packages details",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"silver\":{\n        \"price\": \"10,000\",\n        \"specification\": \"You will get the basic package for Anniversary\",\n        \"cameras\": [\"Nikon 1\", \"Nikon 2\", \"Nikon 3\"],\n        \"drones\": [\"Drone 1\", \"Drone 2\"],\n        \"gimbals\": [\"Gimbal 1\", \"Gimbal 2\"],\n        \"lights\": [\"Light 1\", \"Light 2\", \"Light 3\"],\n        \"lenses\": [\"Lens 1\", \"Lens 2\"],\n        \"other_equipments\": [\"Umbrella\", \"XYZ\", \"ABC\", \"QWE\"]\n    },\n    \"gold\": {\n        \"price\": \"20,000\",\n        \"specification\": \"You will get the medium package for Anniversary\",\n        \"cameras\": [\"Nikon 3\", \"Nikon 4\"],\n        \"drones\": [\"Drone 2\", \"Drone 3\"],\n        \"gimbals\": [\"Gimbal 2\", \"Gimbal 3\"],\n        \"lights\": [\"Light 1\", \"Light 2\"],\n        \"lenses\": [\"Lens 1\", \"Lens 2\"],\n        \"other_equipments\": [\"Umbrella\", \"XYZ\", \"ABC\"]\n    },\n    \"platinum\": {\n        \"price\": \"30,000\",\n        \"specification\": \"You will get the premium package for Anniversary\",\n        \"cameras\": [\"Nikon 1\", \"Nikon 2\", \"Nikon 3\", \"Nikon 4\"],\n        \"drones\": [\"Drone 1\", \"Drone 2\", \"Drone 3\", \"Drone 4\"],\n        \"gimbals\": [\"Gimbal 1\", \"Gimbal 3\"],\n        \"lights\": [\"Light 1\", \"Light 3\"],\n        \"lenses\": [\"Lens 1\", \"Lens 2\"],\n        \"other_equipments\": [\"Umbrella\", \"XYZ\", \"ABC\"]\n    }\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/edit_event_packages_details?event_type=Anniversary",
+							"protocol": "http",
+							"host": [
+								"ec2-3-111-47-183",
+								"ap-south-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"api",
+								"edit_event_packages_details"
+							],
+							"query": [
+								{
+									"key": "event_type",
+									"value": "Anniversary"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Mar 2023 13:55:14 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ce3bf6e5a5728be109d7bc58d3d15f6a\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "2c4b7d3d-7485-4604-9e66-d9f9c27cff28"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.163299"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Event packages updated successfully.\",\n    \"success\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Photographers details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/photographers_details",
+					"protocol": "http",
+					"host": [
+						"ec2-3-111-47-183",
+						"ap-south-1",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"photographers_details"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Photographers details",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/photographers_details",
+							"protocol": "http",
+							"host": [
+								"ec2-3-111-47-183",
+								"ap-south-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"api",
+								"photographers_details"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Mar 2023 09:15:16 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"63e854a333879638952517927ef2faba\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "d9a6d88c-9016-47ac-bb60-ae9ef2b53ba9"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.009229"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Photographers details fetched successfully\",\n    \"success\": true,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"full_name\": \"Harsh Suthar\",\n            \"city\": \"Ahmedabad\",\n            \"events\": [\n                \"Wedding\",\n                \"Pre-Wedding\",\n                \"Anniversary\",\n                \"Baby Shower\",\n                \"Birthday\",\n                \"Modelling\"\n            ]\n        },\n        {\n            \"id\": 2,\n            \"full_name\": \"Nirmal Vaja\",\n            \"city\": null,\n            \"events\": \"\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Single photographer information",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/single_photographer_info?id=1",
+					"protocol": "http",
+					"host": [
+						"ec2-3-111-47-183",
+						"ap-south-1",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"single_photographer_info"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Single photographer information",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/single_photographer_info?id=1",
+							"protocol": "http",
+							"host": [
+								"ec2-3-111-47-183",
+								"ap-south-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"api",
+								"single_photographer_info"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Mar 2023 11:18:20 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"780b2e9981e9159f9e568ff3a946cb72\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "bd09eef7-b708-4d19-8f74-ea26107e6c5b"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.011627"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Photographer info fetched successfully.\",\n    \"success\": true,\n    \"data\": {\n        \"personal_info\": {\n            \"full_name\": \"Harsh Suthar\",\n            \"city\": \"Ahmedabad\",\n            \"experience\": \"less than 1 year\",\n            \"able_to_travel\": null\n        },\n        \"events\": [\n            {\n                \"id\": 1,\n                \"event_type\": \"Wedding\",\n                \"available_dates\": null,\n                \"user_id\": 1\n            },\n            {\n                \"id\": 2,\n                \"event_type\": \"Pre-Wedding\",\n                \"available_dates\": null,\n                \"user_id\": 1\n            },\n            {\n                \"id\": 3,\n                \"event_type\": \"Anniversary\",\n                \"available_dates\": null,\n                \"user_id\": 1\n            },\n            {\n                \"id\": 4,\n                \"event_type\": \"Baby Shower\",\n                \"available_dates\": null,\n                \"user_id\": 1\n            },\n            {\n                \"id\": 5,\n                \"event_type\": \"Birthday\",\n                \"available_dates\": null,\n                \"user_id\": 1\n            },\n            {\n                \"id\": 6,\n                \"event_type\": \"Modelling\",\n                \"available_dates\": null,\n                \"user_id\": 1\n            }\n        ],\n        \"images\": [],\n        \"videos\": [],\n        \"silver_package\": {\n            \"package_type\": \"silver\",\n            \"price\": \"5000\",\n            \"details\": \"You will get the basic package for Anniversary\",\n            \"equipments\": {\n                \"cameras\": [\n                    \"Nikon 1\",\n                    \"Nikon 2\"\n                ],\n                \"drones\": [\n                    \"Drone 1\",\n                    \"Drone 2\"\n                ],\n                \"gimbals\": [\n                    \"Gimbal 1\",\n                    \"Gimbal 2\"\n                ],\n                \"lights\": [\n                    \"Light 1\",\n                    \"Light 2\"\n                ],\n                \"lenses\": [\n                    \"Lens 1\",\n                    \"Lens 2\"\n                ],\n                \"other_equipments\": [\n                    \"Umbrella\",\n                    \"XYZ\",\n                    \"ABC\"\n                ]\n            }\n        },\n        \"gold_package\": {\n            \"package_type\": \"gold\",\n            \"price\": \"15,000\",\n            \"details\": \"You will get the medium package for Anniversary\",\n            \"equipments\": {\n                \"cameras\": [\n                    \"Nikon 3\",\n                    \"Nikon 4\"\n                ],\n                \"drones\": [\n                    \"Drone 2\",\n                    \"Drone 3\"\n                ],\n                \"gimbals\": [\n                    \"Gimbal 2\",\n                    \"Gimbal 3\"\n                ],\n                \"lights\": [\n                    \"Light 1\",\n                    \"Light 2\"\n                ],\n                \"lenses\": [\n                    \"Lens 1\",\n                    \"Lens 2\"\n                ],\n                \"other_equipments\": [\n                    \"Umbrella\",\n                    \"XYZ\",\n                    \"ABC\"\n                ]\n            }\n        },\n        \"platinum_package\": {\n            \"package_type\": \"platinum\",\n            \"price\": \"25,000\",\n            \"details\": \"You will get the premium package for Anniversary\",\n            \"equipments\": {\n                \"cameras\": [\n                    \"Nikon 1\",\n                    \"Nikon 2\",\n                    \"Nikon 3\"\n                ],\n                \"drones\": [\n                    \"Drone 1\",\n                    \"Drone 2\",\n                    \"Drone 3\"\n                ],\n                \"gimbals\": [\n                    \"Gimbal 1\",\n                    \"Gimbal 3\"\n                ],\n                \"lights\": [\n                    \"Light 1\",\n                    \"Light 3\"\n                ],\n                \"lenses\": [\n                    \"Lens 1\",\n                    \"Lens 2\"\n                ],\n                \"other_equipments\": [\n                    \"Umbrella\",\n                    \"XYZ\",\n                    \"ABC\"\n                ]\n            }\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Event packages details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/event_packages_details?id=1&event_type=Anniversary",
+					"protocol": "http",
+					"host": [
+						"ec2-3-111-47-183",
+						"ap-south-1",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"event_packages_details"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						},
+						{
+							"key": "event_type",
+							"value": "Anniversary"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Event packages details",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/event_packages_details?id=1&event_type=Anniversary",
+							"protocol": "http",
+							"host": [
+								"ec2-3-111-47-183",
+								"ap-south-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"api",
+								"event_packages_details"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								},
+								{
+									"key": "event_type",
+									"value": "Anniversary"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Mar 2023 11:19:54 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"26e77733f7d15830202e1c1ca71ad1ba\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "9c231c63-abce-4431-8d6a-9d7de513fd51"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.027415"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Event & Packages info fetched successfully.\",\n    \"success\": true,\n    \"data\": {\n        \"images\": [\n            \"http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--724c4f75509f47d160c764f9bbd13ca895998e0d/shark.jpg\",\n            \"http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a7f9bf62604359075235f6393bc64cbf0839b7bd/white_shark.jpg\",\n            \"http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0e729e6812c1168b001877eeec158785e693e121/google.jpg\"\n        ],\n        \"videos\": [\n            \"http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--abd2ed5f21008b59153046f0dbcbc9225b7cd08f/SampleVideo_1280x720_2mb.mp4\"\n        ],\n        \"silver_package\": {\n            \"package_type\": \"silver\",\n            \"price\": \"5000\",\n            \"details\": \"You will get the basic package for Anniversary\",\n            \"equipments\": {\n                \"cameras\": [\n                    \"Nikon 1\",\n                    \"Nikon 2\"\n                ],\n                \"drones\": [\n                    \"Drone 1\",\n                    \"Drone 2\"\n                ],\n                \"gimbals\": [\n                    \"Gimbal 1\",\n                    \"Gimbal 2\"\n                ],\n                \"lights\": [\n                    \"Light 1\",\n                    \"Light 2\"\n                ],\n                \"lenses\": [\n                    \"Lens 1\",\n                    \"Lens 2\"\n                ],\n                \"other_equipments\": [\n                    \"Umbrella\",\n                    \"XYZ\",\n                    \"ABC\"\n                ]\n            }\n        },\n        \"gold_package\": {\n            \"package_type\": \"gold\",\n            \"price\": \"15,000\",\n            \"details\": \"You will get the medium package for Anniversary\",\n            \"equipments\": {\n                \"cameras\": [\n                    \"Nikon 3\",\n                    \"Nikon 4\"\n                ],\n                \"drones\": [\n                    \"Drone 2\",\n                    \"Drone 3\"\n                ],\n                \"gimbals\": [\n                    \"Gimbal 2\",\n                    \"Gimbal 3\"\n                ],\n                \"lights\": [\n                    \"Light 1\",\n                    \"Light 2\"\n                ],\n                \"lenses\": [\n                    \"Lens 1\",\n                    \"Lens 2\"\n                ],\n                \"other_equipments\": [\n                    \"Umbrella\",\n                    \"XYZ\",\n                    \"ABC\"\n                ]\n            }\n        },\n        \"platinum_package\": {\n            \"package_type\": \"platinum\",\n            \"price\": \"25,000\",\n            \"details\": \"You will get the premium package for Anniversary\",\n            \"equipments\": {\n                \"cameras\": [\n                    \"Nikon 1\",\n                    \"Nikon 2\",\n                    \"Nikon 3\"\n                ],\n                \"drones\": [\n                    \"Drone 1\",\n                    \"Drone 2\",\n                    \"Drone 3\"\n                ],\n                \"gimbals\": [\n                    \"Gimbal 1\",\n                    \"Gimbal 3\"\n                ],\n                \"lights\": [\n                    \"Light 1\",\n                    \"Light 3\"\n                ],\n                \"lenses\": [\n                    \"Lens 1\",\n                    \"Lens 2\"\n                ],\n                \"other_equipments\": [\n                    \"Umbrella\",\n                    \"XYZ\",\n                    \"ABC\"\n                ]\n            }\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Photographers packages list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/photographers_packages_list",
+					"protocol": "http",
+					"host": [
+						"ec2-3-111-47-183",
+						"ap-south-1",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"photographers_packages_list"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Photographers packages list",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/photographers_packages_list",
+							"protocol": "http",
+							"host": [
+								"ec2-3-111-47-183",
+								"ap-south-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"api",
+								"photographers_packages_list"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Mar 2023 11:21:09 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"54f3582fbaeb7a8c5ee011a8e4eacbf0\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "6f43d253-c67f-477e-9d3c-b5095e25204a"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.014746"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Packages list fetched successfully\",\n    \"success\": true,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"full_name\": \"Harsh Suthar\",\n            \"brand_name\": \"Harsh Photography\",\n            \"city\": \"Ahmedabad\",\n            \"events\": [\n                \"Wedding\",\n                \"Pre-Wedding\",\n                \"Anniversary\",\n                \"Baby Shower\",\n                \"Birthday\",\n                \"Modelling\"\n            ],\n            \"silver_package\": {\n                \"package_type\": \"silver\",\n                \"price\": \"5000\",\n                \"details\": \"You will get the basic package for Anniversary\",\n                \"equipments\": {\n                    \"cameras\": [\n                        \"Nikon 1\",\n                        \"Nikon 2\"\n                    ],\n                    \"drones\": [\n                        \"Drone 1\",\n                        \"Drone 2\"\n                    ],\n                    \"gimbals\": [\n                        \"Gimbal 1\",\n                        \"Gimbal 2\"\n                    ],\n                    \"lights\": [\n                        \"Light 1\",\n                        \"Light 2\"\n                    ],\n                    \"lenses\": [\n                        \"Lens 1\",\n                        \"Lens 2\"\n                    ],\n                    \"other_equipments\": [\n                        \"Umbrella\",\n                        \"XYZ\",\n                        \"ABC\"\n                    ]\n                }\n            },\n            \"gold_package\": {\n                \"package_type\": \"gold\",\n                \"price\": \"15,000\",\n                \"details\": \"You will get the medium package for Anniversary\",\n                \"equipments\": {\n                    \"cameras\": [\n                        \"Nikon 3\",\n                        \"Nikon 4\"\n                    ],\n                    \"drones\": [\n                        \"Drone 2\",\n                        \"Drone 3\"\n                    ],\n                    \"gimbals\": [\n                        \"Gimbal 2\",\n                        \"Gimbal 3\"\n                    ],\n                    \"lights\": [\n                        \"Light 1\",\n                        \"Light 2\"\n                    ],\n                    \"lenses\": [\n                        \"Lens 1\",\n                        \"Lens 2\"\n                    ],\n                    \"other_equipments\": [\n                        \"Umbrella\",\n                        \"XYZ\",\n                        \"ABC\"\n                    ]\n                }\n            },\n            \"platinum_package\": {\n                \"package_type\": \"platinum\",\n                \"price\": \"25,000\",\n                \"details\": \"You will get the premium package for Anniversary\",\n                \"equipments\": {\n                    \"cameras\": [\n                        \"Nikon 1\",\n                        \"Nikon 2\",\n                        \"Nikon 3\"\n                    ],\n                    \"drones\": [\n                        \"Drone 1\",\n                        \"Drone 2\",\n                        \"Drone 3\"\n                    ],\n                    \"gimbals\": [\n                        \"Gimbal 1\",\n                        \"Gimbal 3\"\n                    ],\n                    \"lights\": [\n                        \"Light 1\",\n                        \"Light 3\"\n                    ],\n                    \"lenses\": [\n                        \"Lens 1\",\n                        \"Lens 2\"\n                    ],\n                    \"other_equipments\": [\n                        \"Umbrella\",\n                        \"XYZ\",\n                        \"ABC\"\n                    ]\n                }\n            }\n        },\n        {\n            \"id\": 2,\n            \"full_name\": \"Nirmal Vaja\",\n            \"brand_name\": null,\n            \"city\": null,\n            \"events\": \"\",\n            \"silver_package\": {\n                \"package_type\": null,\n                \"price\": null,\n                \"details\": null,\n                \"equipments\": null\n            },\n            \"gold_package\": {\n                \"package_type\": null,\n                \"price\": null,\n                \"details\": null,\n                \"equipments\": null\n            },\n            \"platinum_package\": {\n                \"package_type\": null,\n                \"price\": null,\n                \"details\": null,\n                \"equipments\": null\n            }\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Save contact form data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_name\": \"Rutvik\",\n    \"phone_number\": \"+91 8908934567\",\n    \"email\": \"rutvik123@yopmail.com\",\n    \"event_type\": \"Wedding\",\n    \"function_start_date\": \"Wed, 08 Mar 2023\",\n    \"no_of_days\": 1,\n    \"message\": \"This is message!\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/save_contact_form_data",
+					"protocol": "http",
+					"host": [
+						"ec2-3-111-47-183",
+						"ap-south-1",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"save_contact_form_data"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Save contact form data",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user_name\": \"Rutvik\",\n    \"phone_number\": \"+91 8908934567\",\n    \"email\": \"rutvik123@yopmail.com\",\n    \"event_type\": \"Wedding\",\n    \"function_start_date\": \"Wed, 08 Mar 2023\",\n    \"no_of_days\": 1,\n    \"message\": \"This is message!\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/save_contact_form_data",
+							"protocol": "http",
+							"host": [
+								"ec2-3-111-47-183",
+								"ap-south-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"api",
+								"save_contact_form_data"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Mar 2023 06:27:41 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"fabc7bf2b8b21e2db4f417a12a2f7142\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "45a24425-3202-4d11-9f5c-7ca9914ba04d"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.020606"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Contact form data saved successfully.\",\n    \"success\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Save Meeting form data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_name\": \"Nirmal\",\n    \"phone_number\": \"+91 9099212345\",\n    \"email\": \"nirmal123@yopmail.com\",\n    \"subject\": \"About birthday\",\n    \"function_date_time\": \"Tue, 07 Mar 2023 10:50:34.714476884 UTC +00:00\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/save_meeting_form_data",
+					"protocol": "http",
+					"host": [
+						"ec2-3-111-47-183",
+						"ap-south-1",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"save_meeting_form_data"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Save Meeting form data",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user_name\": \"Nirmal\",\n    \"phone_number\": \"+91 9099212345\",\n    \"email\": \"nirmal123@yopmail.com\",\n    \"subject\": \"About birthday\",\n    \"function_date_time\": \"Tue, 07 Mar 2023 10:50:34.714476884 UTC +00:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://ec2-3-111-47-183.ap-south-1.compute.amazonaws.com/api/save_meeting_form_data",
+							"protocol": "http",
+							"host": [
+								"ec2-3-111-47-183",
+								"ap-south-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"api",
+								"save_meeting_form_data"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Mar 2023 06:30:57 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a45c31ad8907870478d704beeafc74de\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "64c1fc65-2c44-46dc-b447-9fc030e81fd5"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.013915"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Meeting form data saved successfully.\",\n    \"success\": true\n}"
+				}
+			]
+		}
+	]
+}

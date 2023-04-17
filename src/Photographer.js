@@ -1,5 +1,5 @@
 import React from 'react'
-import { makeStyles } from '@mui/material/styles';
+// import { makeStyles } from '@mui/material/styles';
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
@@ -14,24 +14,24 @@ import Rater from 'react-rater'
 import 'react-rater/lib/react-rater.css'
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  paper: {
-    padding: theme.spacing(2),
-    margin: 'auto',
-    maxWidth: 1100,
-  },
-  images: {
-    width: 128,
-    height: 128,
-  },
+// const useStyles = makeStyles((theme) => ({
+//   root: {
+//     flexGrow: 1,
+//   },
+//   paper: {
+//     padding: theme.spacing(2),
+//     margin: 'auto',
+//     maxWidth: 1100,
+//   },
+//   images: {
+//     width: 128,
+//     height: 128,
+//   },
    
-}));
+// }));
 
 function Photographer() {
-  const classes = useStyles();
+  // const classes = useStyles();
   return (
     <div>
       <img
@@ -39,13 +39,19 @@ function Photographer() {
         style={{ width: "2000px", height: "900px" }}
         alt="/"
       />
-      <div className={classes.root}>
+      <div 
+      // className={classes.root}
+      >
         <br />
-        <Paper className={classes.paper}>
+        <Paper 
+        // className={classes.paper}
+        >
           <Grid container spacing={3}>
             <Grid item>
-              <ButtonBase className={classes.images}>
-                <img 
+              <ButtonBase 
+              // className={classes.images}
+              >
+                <img class=""
                 src={o1} 
                 alt="/" />
               </ButtonBase>
@@ -95,10 +101,14 @@ function Photographer() {
         </Paper>
         <br />
 
-        <Paper className={classes.paper}>
+        <Paper 
+        // className={classes.paper}
+        >
           <Grid container spacing={3}>
             <Grid item>
-              <ButtonBase className={classes.images}>
+              <ButtonBase 
+              // className={classes.images}
+              >
                 <img 
                 src={o2} 
                 alt="/" 
@@ -147,10 +157,14 @@ function Photographer() {
         </Paper>
         <br />
 
-        <Paper className={classes.paper}>
+        <Paper 
+        // className={classes.paper}
+        >
           <Grid container spacing={3}>
             <Grid item>
-              <ButtonBase className={classes.images}>
+              <ButtonBase 
+              // className={classes.images}
+              >
                 <img 
                 src={o3} 
                 alt="/" />
@@ -195,10 +209,14 @@ function Photographer() {
         </Paper>
         <br />
 
-        <Paper className={classes.paper}>
+        <Paper 
+        // className={classes.paper}
+        >
           <Grid container spacing={3}>
             <Grid item>
-              <ButtonBase className={classes.images}>
+              <ButtonBase 
+              // className={classes.images}
+              >
                 <img 
                 src={o4} 
                 alt="/" />
@@ -246,10 +264,14 @@ function Photographer() {
         </Paper>
         <br />
 
-        <Paper className={classes.paper}>
+        <Paper 
+        // className={classes.paper}
+        >
           <Grid container spacing={3}>
             <Grid item>
-              <ButtonBase className={classes.images}>
+              <ButtonBase 
+              // className={classes.images}
+              >
                 <img 
                 src={o5} 
                 alt="/" />
@@ -297,10 +319,14 @@ function Photographer() {
         </Paper>
         <br />
 
-        <Paper className={classes.paper}>
+        <Paper 
+        // className={classes.paper}
+        >
           <Grid container spacing={3}>
             <Grid item>
-              <ButtonBase className={classes.images}>
+              <ButtonBase 
+              // className={classes.images}
+              >
                 <img 
                 src={o6} 
                 alt="/" />

@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import { useState } from "react";
-// import Avatar from "@mui/material/Avatar";
+import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
 import Drawer from "./Drawer";
 import PropTypes from "prop-types";
@@ -128,9 +128,10 @@ function Setting() {
           <div className="flex flex-col text-center w-full mb-5">
             <Stack direction="row" className="text-center place-content-center">
               <label class="file">
-                <input 
-                type="file"
-                  class=" flex mx-auto mb-8 mr-8 text-white bg-[#4484CE] border-0 py-2 px-8 focus:outline-none"
+                {/* <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" /> */}
+                <Avatar
+                  // type="file"
+                  // class=" flex mx-auto mb-8 mr-8 text-white bg-[#4484CE] border-0 py-2 px-8 focus:outline-none"
                   alt="Raj Shah/Image"
                   // src={imageAsUrl.imgUrl}
                   // alt={image}
@@ -140,6 +141,7 @@ function Setting() {
                   sx={{ width: 60, height: 60 }}
                   id="file"
                   aria-label="File browser example"
+                  // alt="/"
                 />
                 <span class="file-custom"></span>
               </label>
@@ -159,7 +161,8 @@ function Setting() {
                     <div className="relative">
                       <div className="p-2 w-full">
                         <button
-                          onClick={handleUpload}
+                          onChange={handleChange}
+                          // onClick={handleUpload}
                           className="flex mx-auto mb-8 mr-8 text-white bg-[#4484CE] border-0 py-2 px-8 focus:outline-none hover:bg-white rounded hover:text-[#4484CE]"
                           // onClick={handleClickOpen}
                         >
